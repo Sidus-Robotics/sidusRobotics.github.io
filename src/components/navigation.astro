@@ -1,7 +1,35 @@
 ---
 
 ---
+<div class="topnav">
+    <a href="/">Home</a>
+    <a href="/about/">About</a>
+    <a href="/sponsors/">Sponsors</a>
+</div>
 
-<a href="/">Home</a>
-<a href="/about/">About</a>
-<a href="/sponsors/">Sponsors</a>
+<style>
+    .topnav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: lightgray;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        
+    }
+    .topnav a{
+        color: black;
+        text-decoration: none;
+        padding: 10px;
+        text-align: center;
+        
+
+    }
+    .topnav a:hover{
+        color: grey;
+        background-color: white;
+    }
+</style>
