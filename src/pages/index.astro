@@ -1,5 +1,7 @@
 ---
 import Navigation from '../components/navigation.astro';
+import starsImage from '../Images/stars-1.png';
+import logo from '../Images/FullLogo.png';
 ---
 
 <html lang="en">
@@ -12,12 +14,34 @@ import Navigation from '../components/navigation.astro';
 	</head>
 	<body>
 		<Navigation />
-		<h1>Sidus Robotics</h1>
+		<div class="images">
+			<img class="stars" src={starsImage.src} alt="Stars">
+			<img class="logo" src={logo.src} alt="Sidus Logo">
+		</div>
+		<p>Summary of Sidus</p>
 		
 	</body>
 </html>
 <style>
-	h1{
-		padding-top: 20px;
+	.stars{
+		width: 100%;
+	}
+	.logo{
+		position: absolute;
+    	top: 50%;
+    	left: 50%;
+   		transform: translate(-50%, -50%); 
+    	width: 30%;
+    	height: auto; 
+		filter: invert(100%); /*could just change image to a white version of logo*/
+	}
+	.images{
+		margin-top: 40px;
+		position: relative; 
+		
+	}
+	body{
+		background-color: black;
+		color: white;
 	}
 </style>
