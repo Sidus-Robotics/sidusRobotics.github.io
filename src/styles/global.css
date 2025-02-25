@@ -12,28 +12,31 @@ body {
 header {
     display: flex;
     position: fixed;
-    justify-content: center;
     width: 100%;
     top: 0;
-    right: 0;
     background-color: black;
     padding-bottom: 4.5vmax;
 }
 
 header img{
     position: absolute;
-    top: 10px;
+    top: 0;
     left: 25px;
     max-width: 4.5vmax;
 }
 
 header nav{
     list-style-type: none;
+    position: absolute;
+    top: 1vmax;
+    right: 1.5vmax;
 }
 
 header a {
     color: white;
     display: inline;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 section#main-content {
@@ -45,16 +48,26 @@ section#index-background img{
     justify-self: center;
     max-width: 55.5vmax;
     margin-top: 4.5vmax;
-    margin-bottom: 4.5vmax;
+    margin-bottom: 5.5vmax;
 }
 
 div#arrow-animation {
     background-color: blue;
 }
 
+section #summary h1{
+    display: flex;
+    justify-content: center;
+}
+
 section #summary {
     background-color: black;
     width: 100%;
+}
+section.content-container h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
 }
 section.content-container#secondary-content {
     background: rgb(0,0,0);
@@ -80,6 +93,13 @@ section#tertiary-content img {
     max-width: 60.5vmax;
 }
 
+section#tertiary-content h1#bronze-medal {
+    justify-self: center;
+    background-color: orange;
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+}
 footer {
     background-color: black;
     padding: 0.5vmax;
