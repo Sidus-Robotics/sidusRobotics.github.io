@@ -1,0 +1,86 @@
+/* Need major revisions here */
+
+body {
+    color: white;
+    font-family: "IBM Plex Mono";
+    background-color: black;
+    width: 100%;
+    overflow-x: hidden; 
+    margin: 0;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    width: 100%;
+    top: 0;
+    right: 0;
+    background-color: black;
+    padding-bottom: 4.5vmax;
+}
+
+header img{
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    max-width: 4.5vmax;
+}
+
+header nav{
+    list-style-type: none;
+}
+
+header a {
+    color: white;
+    display: inline;
+}
+
+section#main-content {
+    background-color: black;
+}
+
+section#index-background img{
+    display: block;
+    justify-self: center;
+    max-width: 55.5vmax;
+    margin-top: 4.5vmax;
+    margin-bottom: 4.5vmax;
+}
+
+div#arrow-animation {
+    background-color: blue;
+}
+
+section #summary {
+    background-color: black;
+    width: 100%;
+}
+section.content-container#secondary-content {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(37,47,63,1) 69%);
+}
+section.content-container#secondary-content div.content{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10vh;
+}
+
+section.content-container#secondary-content div p{
+    text-align:left;
+}
+
+section#tertiary-content {
+    padding-top: 1vmax;
+    margin: 0%;
+    color: black;
+    background-color: lightgrey;
+}
+section#tertiary-content img {
+    max-width: 60.5vmax;
+}
+
+footer {
+    background-color: black;
+    padding: 0.5vmax;
+}
