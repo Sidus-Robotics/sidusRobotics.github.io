@@ -95,6 +95,11 @@ section #summary {
     width: 100%;
     text-align: center;
 }
+
+section #summary p{
+    margin: 2vmax 2vmax;
+}
+
 section.content-container h1 {
     display: flex;
     justify-content: center;
@@ -110,7 +115,9 @@ section.content-container#secondary-content div.content{
     flex-direction: row;
     margin-top: 10vh;
 }
-
+section.content-container#secondary-content h1 {
+    translate: 0 20px;
+}
 section.content-container#secondary-content div p{
     text-align:left;
     margin: 2vmax 2vmax;
@@ -120,23 +127,7 @@ section.content-container#secondary-content img {
     display: block;
     margin: auto;
 }
-/* this needs a better fix */
-/* p.bigger-icon-fix {
-    translate: 0 -70px;
-}
 
-img.bigger-icon-fix {
-    translate: 0 -40px;
-}
-
-p.little-icon-fix {
-    translate: 0 20px;
-}
-
-img.little-icon-fix {
-    translate: 0 20px;
-} */
-/* ----- */
 section#tertiary-content {
     padding-top: 1vmax;
     margin: 0%;
