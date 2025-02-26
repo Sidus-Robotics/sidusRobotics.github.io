@@ -119,6 +119,23 @@ section.content-container#secondary-content img {
     display: block;
     margin: auto;
 }
+/* this needs a better fix */
+p.bigger-icon-fix {
+    translate: 0 -70px;
+}
+
+img.bigger-icon-fix {
+    translate: 0 -40px;
+}
+
+p.little-icon-fix {
+    translate: 0 20px;
+}
+
+img.little-icon-fix {
+    translate: 0 20px;
+}
+/* ----- */
 section#tertiary-content {
     padding-top: 1vmax;
     margin: 0%;
