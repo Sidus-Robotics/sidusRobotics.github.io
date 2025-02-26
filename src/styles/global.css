@@ -170,10 +170,11 @@ section#tertiary-content img {
 
 section#tertiary-content h1#bronze-medal {
     justify-self: center;
-    background-color: orange;
+    background-color: rgb(190, 100, 10);
     padding: 10px;
     width: 100px;
     border-radius: 10px;
+    color: white;
 }
 
 div.image-block {
