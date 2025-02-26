@@ -12,6 +12,18 @@ div#arrow-animation {
     animation-direction: alternate ;
 }
 
+img#sidus-index {
+    translate: 0 50px;
+    opacity: 0;
+    animation: pushUp ease 1000ms forwards;
+}
+@keyframes pushUp {
+    to {
+        opacity: 1;
+        translate: 0 -10px;
+    }
+}
+
 body {
     color: white;
     font-family: "IBM Plex Mono";
