@@ -27,12 +27,12 @@ import Pegnl from "../Images/pegnl.svg"
 	</head>
 	<body>
 		<header>
-			<img src={LogoStar.src} alt="">
+			<a href="/"><img src={LogoStar.src} alt=""></a>
 			<nav>
-				<span><a href="/">HOME</a></span>
-				<span><a href="/about">ABOUT</a></span>
-				<span><a href="/sponsors">SPONSORSHIP</a></span>
-				<span><a href="/contact">CONTACT</a></span>
+				<a href="/">HOME</a>
+				<a href="/about">ABOUT</a>
+				<a href="/sponsors">SPONSORSHIP</a>
+				<a href="/contact">CONTACT</a>
 			</nav>
 		</header>
 
@@ -134,9 +134,11 @@ import Pegnl from "../Images/pegnl.svg"
 			<h1 class="" id="bronze-medal">
 				BRONZE
 			</h1>
-			<img src={Colab.src} alt="colab.png">
+			<div class="image-block">
+				<img src={Colab.src} alt="colab.png" id="colab">
 
-			<img src={Pegnl.src} alt="pegnl.svg">
+				<img src={Pegnl.src} alt="pegnl.svg" id="pegnl">
+			</div>
 		</section>
 
 		<footer>
