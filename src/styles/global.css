@@ -1,7 +1,7 @@
 /* Need major revisions here */
-:root {
+/* :root {
     
-}
+} */
 @keyframes point-down {
     from {translate: 0px 0px;}
     to {translate: 0px 50px;}
@@ -201,7 +201,7 @@ footer {
 }
 
 input {
-    content: 'X';
+    content: '';
     position: absolute;
     right: 0;
     height: 50px;
@@ -212,18 +212,23 @@ input {
 }
 
 input:checked ~ nav {
+    translate: 20px;
     visibility: visible;
-    transition: 300ms;
+    transition: 500ms;
 }
 
+input:checked ~ div.menu-container div.bar3 {
+    translate: -10px;
+} 
+
 input:checked ~ div.menu-container div.bar2 {
-    background-color: red;
+    translate: -5px;
 }
 .menu-container {
     visibility: hidden;
     position: absolute;
     top: 1vmax;
-    right: 10px;
+    right: 20px;
     z-index: 1;
 }
 .bar1, .bar2, .bar3 {
@@ -232,7 +237,7 @@ input:checked ~ div.menu-container div.bar2 {
     background-color: white;
     margin: 4px 0;
     border-radius: 2px;
-    /* transition: 0.4s; */
+    transition: 100ms;
 }
 @media only screen and (max-width: 1200px) {
     section.content-container#secondary-content div.content{
@@ -244,16 +249,14 @@ input:checked ~ div.menu-container div.bar2 {
         display: flex;
         flex-direction: column;
         visibility: hidden;
-        /* background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 80%); */
         background: black;
-        translate: 20px 0;
+        translate: 200px 0;
         padding: 50vh 5%;
     }
     nav a {
         translate: 20px -400px;
         padding-bottom: 0.25vmax;
         font-size: 3vmax;
-        /* text-align: center; */
     }
     .menu-container {
         visibility: visible;
