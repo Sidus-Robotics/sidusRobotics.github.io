@@ -1,21 +1,24 @@
 footer {
     background-color: black;
-    padding: 0.5vmax;
+    padding: 25px;
 }
 footer p {
     font-size: small;
     opacity: 0.5;
     position: absolute;
+    translate: 0 -1vmax;
 }
 .social-medias img{
     max-width:min-content;
     pointer-events: all;
+    width: 30px;
 }
 .social-medias {
     position: absolute;
+    translate: 0 -15px;
     right: 10px;
     z-index: 1;
 }
-#linkedin {
-    width: 44px;
+#facebook {
+    width: 20px;
 }

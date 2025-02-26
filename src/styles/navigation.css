@@ -2,6 +2,7 @@ header {
     display: flex;
     position: fixed;
     width: 100%;
+    min-height: 10px;
     top: 0;
     background-color: black;
     padding-bottom: 4.5vmax;
@@ -58,6 +59,7 @@ background: #fff;
 input {
     content: '';
     cursor: pointer;
+    pointer-events: none;
     position: absolute;
     right: 0;
     height: 50px;
@@ -70,7 +72,7 @@ input {
 input:checked ~ nav {
     translate: 20px;
     visibility: visible;
-    transition: 500ms;
+    transition: 300ms;
 }
 
 
@@ -80,7 +82,7 @@ input:checked ~ div.menu-container div.bar3 {
 } 
 
 input:checked ~ div.menu-container div.bar2 {
-    visibility: hidden;
+    opacity: 0;
 }
 
 input:checked ~ div.menu-container div.bar1 {
@@ -91,7 +93,7 @@ input:checked ~ div.menu-container div.bar1 {
 .menu-container {
     visibility: hidden;
     position: absolute;
-    top: 1vmax;
+    top: 0.9vmax;
     right: 20px;
     z-index: 1;
 }
@@ -110,11 +112,11 @@ input:checked ~ div.menu-container div.bar1 {
         flex-direction: column;
         visibility: hidden;
         background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 90%);
-        translate: 200px 0;
-        padding: 50vh 5%;
+        translate: 20vmax 0;
+        padding: 50vmax 5%;
     }
     nav a {
-        translate: 20px -400px;
+        translate: 20px -45vmax;
         padding-bottom: 0.25vmax;
         font-size: 3vmax;
     }

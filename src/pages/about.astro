@@ -3,7 +3,7 @@
 import Navigation from '../components/navigation.astro';
 import Footer from '../components/footer.astro';
 import "../styles/global.css"
-// import "../styles/about.css"
+import "../styles/about.css"
 ---
 
 <html lang="en">
@@ -24,6 +24,14 @@ import "../styles/global.css"
 	</head>
 	<body>
         <Navigation/>
-		<!-- <Footer/> -->
+		<section class="content-container" id="about-main-content">
+		
+			<h1>OUR MISSION</h1>
+			
+			<div class="content" id="about-mission-statement">
+			</div>
+		</section>
+
+		<Footer/>
 	</body>
 </html>
