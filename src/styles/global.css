@@ -261,11 +261,11 @@ input:checked ~ div.menu-container div.bar2 {
     }
 
     input:not(:checked) ~ nav {
-        translate: 300px;
+        translate: 100vw;
         visibility: visible;
-        transition: 500ms;
+        transition: 200ms;
     }
-    
+
     .menu-container {
         visibility: visible;
     }
