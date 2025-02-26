@@ -57,7 +57,7 @@ background: #fff;
 
 input {
     content: '';
-    pointer-events: none;
+    cursor: pointer;
     position: absolute;
     right: 0;
     height: 50px;
@@ -75,11 +75,17 @@ input:checked ~ nav {
 
 
 input:checked ~ div.menu-container div.bar3 {
-    translate: -10px;
+    translate: 0 -5px;
+    rotate: 45deg;
 } 
 
 input:checked ~ div.menu-container div.bar2 {
-    translate: -5px;
+    visibility: hidden;
+}
+
+input:checked ~ div.menu-container div.bar1 {
+    translate: 0 9px;
+    rotate: -45deg;
 }
 
 .menu-container {
