@@ -1,8 +1,6 @@
 ---
 import Navigation from '../components/navigation.astro';
 import Footer from '../components/footer.astro';
-import "../styles/global.css"
-import LogoStar from "../Images/SidusRoboticsWhite.png"
 import FullLogo from "../Images/FullSidusWhite.png"
 import Mars from "../Images/mars.jpg"
 import Arrow from "../Images/Arrow.png"
@@ -12,9 +10,7 @@ import Mechanical from "../Images/Gear.png"
 import Electrical from "../Images/Power.png"
 import Colab from "../Images/colab.png"
 import Pegnl from "../Images/pegnl.svg"
-import LinkedIn from "../Images/LinkedIn.png"
-import Facebook from "../Images/Facebook.png"
-import Instagram from "../Images/Instagram.png"
+import "../styles/global.css"
 ---
 
 <html lang="en">
@@ -33,27 +29,9 @@ import Instagram from "../Images/Instagram.png"
 		<meta name="generator" content={Astro.generator} />
 		<title>Sidus Robotics</title>
 	</head>
+
 	<body>
-		<header>
-			<a href="/"><img src={LogoStar.src} alt=""></a>
-
-			<input class="drop-down" type="checkbox"></input>
-
-			<div class="menu-container">
-				<div class="bar1"></div>
-				<div class="bar2"></div>
-				<div class="bar3"></div>
-			</div>
-
-			<div class="blur"></div>
-
-			<nav>
-				<a href="/" class="link">HOME</a>
-				<a href="/about" class="link">ABOUT</a>
-				<a href="/sponsors" class="link">SPONSORS</a>
-				<a href="/contact" class="link">CONTACT</a>
-			</nav>
-		</header>
+		<Navigation/>
 
 		<section class="content-container" id="index-background">
 			<img src={FullLogo.src} alt="siduslogo.png" id="sidus-index">
@@ -160,15 +138,6 @@ import Instagram from "../Images/Instagram.png"
 			</div>
 		</section>
 
-		<footer>
-			<p>2025 Sidus Robotics. All Rights Reserved</p>
-			<div class="social-medias">
-				<a href=""><img src={LinkedIn.src} alt=""></a>
-				<a href=""><img src={Facebook.src}alt=""></a>
-				<a href="https://www.instagram.com/sidusrobotics/"><img src={Instagram.src} alt=""></a>
-			</div>
-
-		</footer>
-
+		<Footer/>
 	</body>
 </html>
