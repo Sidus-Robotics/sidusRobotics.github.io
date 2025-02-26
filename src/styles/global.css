@@ -39,6 +39,7 @@ header {
     top: 0;
     background-color: black;
     padding-bottom: 4.5vmax;
+    z-index: 1;
 }
 
 header img{
