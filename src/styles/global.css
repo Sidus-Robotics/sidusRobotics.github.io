@@ -217,11 +217,6 @@ input:checked ~ nav {
     transition: 500ms;
 }
 
-input:not(:checked) ~ nav {
-    translate: 300px;
-    visibility: visible;
-    transition: 500ms;
-}
 
 input:checked ~ div.menu-container div.bar3 {
     translate: -10px;
@@ -264,6 +259,13 @@ input:checked ~ div.menu-container div.bar2 {
         padding-bottom: 0.25vmax;
         font-size: 3vmax;
     }
+
+    input:not(:checked) ~ nav {
+        translate: 300px;
+        visibility: visible;
+        transition: 500ms;
+    }
+    
     .menu-container {
         visibility: visible;
     }
