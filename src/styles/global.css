@@ -121,7 +121,7 @@ section.content-container#secondary-content img {
     margin: auto;
 }
 /* this needs a better fix */
-p.bigger-icon-fix {
+/* p.bigger-icon-fix {
     translate: 0 -70px;
 }
 
@@ -135,7 +135,7 @@ p.little-icon-fix {
 
 img.little-icon-fix {
     translate: 0 20px;
-}
+} */
 /* ----- */
 section#tertiary-content {
     padding-top: 1vmax;
