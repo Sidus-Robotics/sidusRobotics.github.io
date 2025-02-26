@@ -199,7 +199,20 @@ footer {
     background-color: black;
     padding: 0.5vmax;
 }
-
+footer p {
+    font-size: small;
+    opacity: 0.5;
+    position: absolute;
+}
+.social-medias img{
+    max-width:min-content;
+    pointer-events: all;
+}
+.social-medias {
+    position: absolute;
+    right: 10px;
+    z-index: 1;
+}
 input {
     content: '';
     pointer-events: none;
