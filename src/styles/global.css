@@ -1,5 +1,7 @@
 /* Need major revisions here */
-
+:root {
+    
+}
 @keyframes point-down {
     from {translate: 0px 0px;}
     to {translate: 0px 50px;}
@@ -113,10 +115,6 @@ section#index-background img{
     margin-bottom: 5.5vmax;
 }
 
-/* div#arrow-animation {
-    background-color: blue;
-} */
-
 section #summary h1{
     display: flex;
     justify-content: center;
@@ -202,9 +200,62 @@ footer {
     padding: 0.5vmax;
 }
 
+input {
+    content: 'X';
+    position: absolute;
+    right: 0;
+    height: 50px;
+    width: 50px;
+    z-index: 2;
+    margin:10px;
+    opacity: 0.001;
+}
+
+input:checked ~ nav {
+    visibility: visible;
+    transition: 300ms;
+}
+
+input:checked ~ div.menu-container div.bar2 {
+    background-color: red;
+}
+.menu-container {
+    visibility: hidden;
+    position: absolute;
+    top: 1vmax;
+    right: 10px;
+    z-index: 1;
+}
+.bar1, .bar2, .bar3 {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    border-radius: 2px;
+    /* transition: 0.4s; */
+}
 @media only screen and (max-width: 1200px) {
     section.content-container#secondary-content div.content{
         display: flex;
         flex-direction: column;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        visibility: hidden;
+        /* background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 80%); */
+        background: black;
+        translate: 20px 0;
+        padding: 50vh 5%;
+    }
+    nav a {
+        translate: 20px -400px;
+        padding-bottom: 0.25vmax;
+        font-size: 3vmax;
+        /* text-align: center; */
+    }
+    .menu-container {
+        visibility: visible;
     }
 }
