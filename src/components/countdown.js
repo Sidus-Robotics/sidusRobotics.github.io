@@ -54,4 +54,4 @@ var x = setInterval(function() {
         clearInterval(x);
         document.getElementById("countdown").innerHTML = "COMPETITION DAY";
     }
-}, 100);
+}, 50);
