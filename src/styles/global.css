@@ -3,8 +3,8 @@
     
 } */
 @keyframes point-down {
-    from {translate: 0px 0px;}
-    to {translate: 0px 50px;}
+    from {translate: 0px -2vmax;}
+    to {translate: 0px 0px;}
 }
 
 div#arrow-animation {
@@ -14,16 +14,30 @@ div#arrow-animation {
     animation-direction: alternate ;
 }
 
-img#sidus-index {
-    translate: 0 50px;
-    opacity: 0;
-    animation: pushUp ease 1000ms forwards;
-}
 @keyframes pushUp {
     to {
         opacity: 1;
         translate: 0 -10px;
     }
+}
+
+img#sidus-index {
+    translate: 0 50px;
+    opacity: 0;
+    animation: pushUp ease 1000ms forwards;
+}
+
+
+@keyframes fadeIn {
+    to {opacity: 1;}
+}
+
+#countdown {
+    font-size: 2vmax;
+    padding: 0;
+    margin: auto;
+    opacity: 0;
+    animation: fadeIn ease 2000ms forwards;
 }
 
 body {
@@ -46,63 +60,6 @@ h3 {
     justify-content: center;
 }
 
-header {
-    display: flex;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    background-color: black;
-    padding-bottom: 4.5vmax;
-    z-index: 1;
-}
-
-header img{
-    position: absolute;
-    top: 0.05vmax;
-    left: 25px;
-    min-width: 0.5vmax;
-    max-width: 4.5vmax;
-}
-
-header nav{
-    list-style-type: none;
-    position: absolute;
-    top: 1.35vmax;
-    right: 1.5vmax;
-}
-
-header a{
-    color: white;
-    display: inline;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.5vmax;
-    margin-right: 10px;
-    
-}
-
-.link{
-    position: relative;
-}
-.link:after{
-    content: '';
-    position: absolute;
-    width: 0; 
-    height: 1px;
-    display: block;
-    margin-top: 5px;
-    right: 0;
-    background: #fff;
-    transition: width .2s ease;
-    -webkit-transition: width .2s ease;
-  }
-   
-  .link:hover:after{
-    width: 100%;
-    left: 0;
-    background: #fff;
-  }
-
 section#main-content {
     background-color: black;
 }
@@ -112,7 +69,7 @@ section#index-background img{
     justify-self: center;
     max-width: 55.5vmax;
     margin-top: 4.5vmax;
-    margin-bottom: 5.5vmax;
+    /* margin-bottom: 5.5vmax; */
 }
 
 section #summary h1{
@@ -136,49 +93,49 @@ section.content-container h1 {
     padding-top: 100px;
 }
 
-section.content-container#secondary-content {
+section.content-container#index-secondary-content {
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(37,47,63,1) 69%);
 }
-section.content-container#secondary-content div.content{
+section.content-container#index-secondary-content div.content{
     display: flex;
     flex-direction: row;
     margin-top: 10vh;
 }
-section.content-container#secondary-content h1 {
+section.content-container#index-secondary-content h1 {
     translate: 0 20px;
 }
-section.content-container#secondary-content div p{
+section.content-container#index-secondary-content div p{
     text-align:left;
     margin: 2vmax 2vmax;
 }
 
-section.content-container#secondary-content img {
+section.content-container#index-secondary-content img {
     display: block;
     margin: auto;
 }
 
-section#tertiary-content {
+section#index-tertiary-content {
     padding-top: 1vmax;
     margin: 0%;
     color: black;
     background-color: lightgrey;
 }
 
-section#tertiary-content div{
+section#index-tertiary-content div{
     display: flex;
     justify-content: center;
 }
 /* translate is not a good solution tbh :/ */
-section#tertiary-content h1{
+section#index-tertiary-content h1{
     translate: 0px -100px;
 }
 
-section#tertiary-content img {
+section#index-tertiary-content img {
     max-width: 40.5vw;
 }
 
-section#tertiary-content h1#bronze-medal {
+section#index-tertiary-content h1#bronze-medal {
     justify-self: center;
     background-color: rgb(190, 100, 10);
     padding: 10px;
@@ -188,112 +145,24 @@ section#tertiary-content h1#bronze-medal {
 }
 
 div.image-block {
-    padding-bottom: 75px;
+    padding-bottom: 7vmax;
 }
 img#colab {
-    max-width: 6vmax;
+    display: block;
     max-height: 6vmax;
+    /* max-width: 5.5vmax; */
+    padding-bottom: 1vmax;
+}
+img#pegnl {
+    display: block;
+    max-height: 10vmax;
+    /* max-width: 5.5vmax; */
+    /* padding-bottom: 1vmax; */
 }
 
-footer {
-    background-color: black;
-    padding: 0.5vmax;
-}
-footer p {
-    font-size: small;
-    opacity: 0.5;
-    position: absolute;
-}
-.social-medias img{
-    max-width:min-content;
-    pointer-events: all;
-}
-.social-medias {
-    position: absolute;
-    right: 10px;
-    z-index: 1;
-}
-input {
-    content: '';
-    pointer-events: none;
-    position: absolute;
-    right: 0;
-    height: 50px;
-    width: 50px;
-    z-index: 2;
-    margin:10px;
-    opacity: 0.001;
-}
-
-input:checked ~ nav {
-    translate: 20px;
-    visibility: visible;
-    transition: 500ms;
-}
-
-
-input:checked ~ div.menu-container div.bar3 {
-    translate: -10px;
-} 
-
-input:checked ~ div.menu-container div.bar2 {
-    translate: -5px;
-}
-
-.menu-container {
-    visibility: hidden;
-    position: absolute;
-    top: 1vmax;
-    right: 20px;
-    z-index: 1;
-}
-.bar1, .bar2, .bar3 {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 4px 0;
-    border-radius: 2px;
-    transition: 100ms;
-}
 @media only screen and (max-width: 1200px) {
-    section.content-container#secondary-content div.content{
+    section.content-container#index-secondary-content div.content{
         display: flex;
         flex-direction: column;
-    }
-
-    nav {
-        display: flex;
-        flex-direction: column;
-        visibility: hidden;
-        background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 90%);
-        translate: 200px 0;
-        padding: 50vh 5%;
-    }
-    nav a {
-        translate: 20px -400px;
-        padding-bottom: 0.25vmax;
-        font-size: 3vmax;
-    }
-    div.blur {
-        position: fixed;
-        margin: 4px 0;
-        padding: 100%;
-        z-index: -1;
-    }
-    
-    input:checked ~ div.blur{
-        background: rgba(0, 0, 0, 0.75);
-    } 
-    input {
-        pointer-events: all;
-    }
-    input:not(:checked) ~ nav {
-        translate: 100vw;
-        visibility: visible;
-        transition: 200ms;
-    }
-
-    .menu-container {
-        visibility: visible;
     }
 }
