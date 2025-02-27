@@ -3,8 +3,8 @@
     
 } */
 @keyframes point-down {
-    from {translate: 0px -2vmax;}
-    to {translate: 0px 0px;}
+    from {translate: 0px -4vmax;}
+    to {translate: 0px -1.75vmax;}
 }
 
 div#arrow-animation {
@@ -68,7 +68,7 @@ section#index-background img{
     display: block;
     justify-self: center;
     max-width: 55.5vmax;
-    margin-top: 4.5vmax;
+    margin-top: 5.75vmax;
     /* margin-bottom: 5.5vmax; */
 }
 
