@@ -61,11 +61,11 @@ input {
     pointer-events: none;
     position: absolute;
     right: 0;
-    height: 50px;
-    width: 50px;
+    height: 3vmax;
+    width: 3vmax;
     z-index: 2;
-    margin:10px;
-    opacity: 0.001;
+    margin: 1vmax 21px;
+    opacity: 0;
 }
 
 input:checked ~ nav {

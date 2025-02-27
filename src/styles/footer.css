@@ -22,3 +22,9 @@ footer p {
 #facebook {
     width: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+    footer p {
+        font-size: 1.25vmax;
+    }
+}

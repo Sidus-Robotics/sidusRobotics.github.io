@@ -27,6 +27,7 @@ div#arrow-animation {
 }
 
 img#sidus-index {
+    width: 45vmax;
     translate: 0 50px;
     opacity: 0;
     animation: pushUp ease 1000ms forwards;
@@ -65,7 +66,8 @@ h3 {
     justify-content: center;
 }
 
-section#main-content {
+section.content-container#index-main-content div{
+    margin: 5vmax 0 10vmax 0;
     background-color: black;
 }
 
@@ -100,7 +102,7 @@ section.content-container h1 {
 
 section.content-container#index-secondary-content {
     background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(37,47,63,1) 69%);
+    background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(37,47,63,1) 69%);
 }
 section.content-container#index-secondary-content div.content{
     display: flex;
@@ -169,5 +171,15 @@ img#pegnl {
     section.content-container#index-secondary-content div.content{
         display: flex;
         flex-direction: column;
+    }
+
+    h1#countdown {
+        text-align: center;
+        font-size: 2vmax;
+        margin: 0 10px 0 10px;
+    }
+
+    div#arrow-animation img{
+        width: 4vmax;
     }
 }
