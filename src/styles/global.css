@@ -14,16 +14,29 @@ div#arrow-animation {
     animation-direction: alternate ;
 }
 
-img#sidus-index {
-    translate: 0 50px;
-    opacity: 0;
-    animation: pushUp ease 1000ms forwards;
-}
 @keyframes pushUp {
     to {
         opacity: 1;
         translate: 0 -10px;
     }
+}
+
+img#sidus-index {
+    translate: 0 50px;
+    opacity: 0;
+    animation: pushUp ease 1000ms forwards;
+}
+
+
+@keyframes fadeIn {
+    to {opacity: 1;}
+}
+
+#countdown {
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    animation: fadeIn ease 2000ms forwards;
 }
 
 body {
@@ -55,7 +68,7 @@ section#index-background img{
     justify-self: center;
     max-width: 55.5vmax;
     margin-top: 4.5vmax;
-    margin-bottom: 5.5vmax;
+    /* margin-bottom: 5.5vmax; */
 }
 
 section #summary h1{

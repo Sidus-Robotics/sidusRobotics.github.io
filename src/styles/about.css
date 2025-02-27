@@ -5,3 +5,12 @@ body {
 #about-mission-statement {
     height: 100vh;
 }
+
+#about-mission-statement {
+    width: 100%;
+    text-align: center;
+}
+
+#about-mission-statement p{
+    margin: 2vmax 2vmax;
+}
