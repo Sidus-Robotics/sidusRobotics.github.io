@@ -1,0 +1,168 @@
+/* Need major revisions here */
+/* :root {
+    
+} */
+@keyframes point-down {
+    from {translate: 0px -2vmax;}
+    to {translate: 0px 0px;}
+}
+
+div#arrow-animation {
+    animation-name: point-down;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate ;
+}
+
+@keyframes pushUp {
+    to {
+        opacity: 1;
+        translate: 0 -10px;
+    }
+}
+
+img#sidus-index {
+    translate: 0 50px;
+    opacity: 0;
+    animation: pushUp ease 1000ms forwards;
+}
+
+
+@keyframes fadeIn {
+    to {opacity: 1;}
+}
+
+#countdown {
+    font-size: 2vmax;
+    padding: 0;
+    margin: auto;
+    opacity: 0;
+    animation: fadeIn ease 2000ms forwards;
+}
+
+body {
+    color: white;
+    font-family: "IBM Plex Mono";
+    /* font-size: 1vmax; */
+    background-color: black;
+    width: 100%;
+    overflow-x:hidden;
+    margin: 0;
+}
+
+img {
+    max-width: 12.5vmax;
+    min-width: 0.1vmax;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+}
+
+section#main-content {
+    background-color: black;
+}
+
+section#index-background img{
+    display: block;
+    justify-self: center;
+    max-width: 55.5vmax;
+    margin-top: 4.5vmax;
+    /* margin-bottom: 5.5vmax; */
+}
+
+section #summary h1{
+    display: flex;
+    justify-content: center;
+}
+
+section #summary {
+    background-color: black;
+    width: 100%;
+    text-align: center;
+}
+
+section #summary p{
+    margin: 2vmax 2vmax;
+}
+
+section.content-container h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+section.content-container#index-secondary-content {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(37,47,63,1) 69%);
+}
+section.content-container#index-secondary-content div.content{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10vh;
+}
+section.content-container#index-secondary-content h1 {
+    translate: 0 20px;
+}
+section.content-container#index-secondary-content div p{
+    text-align:left;
+    margin: 2vmax 2vmax;
+}
+
+section.content-container#index-secondary-content img {
+    display: block;
+    margin: auto;
+}
+
+section#index-tertiary-content {
+    padding-top: 1vmax;
+    margin: 0%;
+    color: black;
+    background-color: lightgrey;
+}
+
+section#index-tertiary-content div{
+    display: flex;
+    justify-content: center;
+}
+/* translate is not a good solution tbh :/ */
+section#index-tertiary-content h1{
+    translate: 0px -100px;
+}
+
+section#index-tertiary-content img {
+    max-width: 40.5vw;
+}
+
+section#index-tertiary-content h1#bronze-medal {
+    justify-self: center;
+    background-color: rgb(190, 100, 10);
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+    color: white;
+}
+
+div.image-block {
+    padding-bottom: 7vmax;
+}
+img#colab {
+    display: block;
+    max-height: 6vmax;
+    /* max-width: 5.5vmax; */
+    padding-bottom: 1vmax;
+}
+img#pegnl {
+    display: block;
+    max-height: 10vmax;
+    /* max-width: 5.5vmax; */
+    /* padding-bottom: 1vmax; */
+}
+
+@media only screen and (max-width: 1200px) {
+    section.content-container#index-secondary-content div.content{
+        display: flex;
+        flex-direction: column;
+    }
+}

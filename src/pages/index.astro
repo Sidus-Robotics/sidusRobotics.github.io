@@ -1,47 +1,141 @@
 ---
 import Navigation from '../components/navigation.astro';
-import starsImage from '../Images/stars-1.png';
-import logo from '../Images/FullLogo.png';
+import Footer from '../components/footer.astro';
+import FullLogo from "../Images/FullSidusWhite.png"
+import Mars from "../Images/mars.jpg"
+import Arrow from "../Images/Arrow.png"
+import Software from "../Images/DesktopComputer.png"
+import Business from "../Images/BriefCase.png"
+import Mechanical from "../Images/Gear.png"
+import Electrical from "../Images/Power.png"
+import Colab from "../Images/colab.png"
+import Pegnl from "../Images/pegnl.svg"
+import "../styles/global.css"
+
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+		<link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+		
+		<!-- <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" /> -->
+		
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Sidus Robotics</title>
 	</head>
+
 	<body>
-		<Navigation />
-		<div class="images">
-			<img class="stars" src={starsImage.src} alt="Stars">
-			<img class="logo" src={logo.src} alt="Sidus Logo">
-		</div>
-		<p>Summary of Sidus</p>
-		
+		<Navigation/>
+
+		<section class="content-container" id="index-background">
+			<img src={FullLogo.src} alt="siduslogo.png" id="sidus-index">
+			<!-- <img src={Mars.src} alt="mars.jpg"> -->
+			
+			<h1 id="countdown">ETA: -- WEEKS -- DAYS -- HOURS -- MINUTES -- SECONDS</h1>
+			<script src="../components/countdown.js"/>
+
+			<div id="arrow-animation">
+				<img src={Arrow.src} alt="">
+			</div>
+		</section>
+
+		<section class="content-container" id="index-main-content">
+			<div class="content" id="summary">
+				<h1>WHO WE ARE</h1>
+				<p>
+					Lorem ipsum dolor sit amet, 
+					consectetur adipiscing elit. 
+					Praesent vel mauris et turpis 
+					pellentesque consequat ac sed nisl. 
+					Duis varius ligula massa, et aliquet 
+					massa ullamcorper vel. Aenean sit amet nisi vel 
+					tortor commodo mollis in sed urna. Vestibulum ante 
+					ipsum primis in faucibus orci luctus et ultrices 
+					posuere cubilia curae; Class aptent taciti sociosqu 
+					ad litora torquent per conubia nostra, per inceptos 
+					himenaeos. Curabitur laoreet pharetra ultricies. 
+					Phasellus euismod, sapien vehicula porta interdum, 
+					nisi lectus porta tortor, id semper arcu lectus id dui.
+					 Praesent posuere vestibulum accumsan. 
+					 Mauris iaculis sed ex tristique rutrum. 
+					 In dapibus arcu blandit arcu volutpat, 
+					 et aliquam metus rhoncus.
+				</p>
+			</div>
+		</section>
+
+		<section class="content-container" id="index-secondary-content">	
+			<h1>SUBTEAMS</h1>
+			
+			<div class="content" id="sub-teams">
+
+				<div class="info-blocks" id="software-block">
+					<h3>SOFTWARE</h3>
+					<img src={Software.src} alt="" class="bigger-icon-fix">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+						Praesent vel mauris et turpis pellentesque consequat ac sed nisl. 
+						Duis varius ligula massa, et aliquet massa ullamcorper vel. 
+						Aenean sit amet nisi vel tortor commodo mollis in sed urna. 
+						Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; 
+						Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+					</p>
+				</div>
+				<div class="info-blocks" id="business-block">
+					<h3>BUSINESS</h3>
+					<img src={Business.src} alt="briefcase.png">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+						Praesent vel mauris et turpis pellentesque consequat ac sed nisl. 
+						Duis varius ligula massa, et aliquet massa ullamcorper vel. 
+						Aenean sit amet nisi vel tortor commodo mollis in sed urna. 
+						Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; 
+						Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+					</p>
+				</div>
+				
+				<div class="info-blocks" id="mechanical-block">
+					<h3>MECHANICAL</h3>
+					<img src={Mechanical.src} alt="gear.png">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+						Praesent vel mauris et turpis pellentesque consequat ac sed nisl. 
+						Duis varius ligula massa, et aliquet massa ullamcorper vel. 
+						Aenean sit amet nisi vel tortor commodo mollis in sed urna. 
+						Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; 
+						Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+					</p>
+				</div>
+				
+				<div class="info-blocks" id="electrical-block">
+					<h3>ELECTRICAL</h3>
+					<img src={Electrical.src} alt="">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+						Praesent vel mauris et turpis pellentesque consequat ac sed nisl. 
+						Duis varius ligula massa, et aliquet massa ullamcorper vel. 
+						Aenean sit amet nisi vel tortor commodo mollis in sed urna. 
+						Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; 
+						Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+					</p>
+				</div>
+			</div>
+		</section>
+		<section class="content-container" id="index-tertiary-content">
+			<h1>SPONSORS</h1>
+			<h1 class="" id="bronze-medal">BRONZE</h1>
+			<div class="image-block">
+				<img src={Colab.src} alt="colab.png" id="colab">
+				<img src={Pegnl.src} alt="pegnl.svg" id="pegnl">
+			</div>
+		</section>
+		<Footer/>
 	</body>
 </html>
-<style>
-	.stars{
-		width: 100%;
-	}
-	.logo{
-		position: absolute;
-    	top: 50%;
-    	left: 50%;
-   		transform: translate(-50%, -50%); 
-    	width: 30%;
-    	height: auto; 
-		filter: invert(100%); /*could just change image to a white version of logo*/
-	}
-	.images{
-		margin-top: 40px;
-		position: relative; 
-		
-	}
-	body{
-		background-color: black;
-		color: white;
-	}
-</style>
