@@ -3,8 +3,8 @@
     
 } */
 @keyframes point-down {
-    from {translate: 0px 0px;}
-    to {translate: 0px 50px;}
+    from {translate: 0px -50px;}
+    to {translate: 0px -10px;}
 }
 
 div#arrow-animation {
@@ -33,9 +33,9 @@ img#sidus-index {
 }
 
 #countdown {
-    font-size: 1.5vmax;
+    font-size: 2vmax;
     padding: 0;
-    margin: 0;
+    margin: auto;
     opacity: 0;
     animation: fadeIn ease 2000ms forwards;
 }
