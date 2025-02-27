@@ -3,8 +3,8 @@
     
 } */
 @keyframes point-down {
-    from {translate: 0px -50px;}
-    to {translate: 0px -10px;}
+    from {translate: 0px -2vmax;}
+    to {translate: 0px 0px;}
 }
 
 div#arrow-animation {
