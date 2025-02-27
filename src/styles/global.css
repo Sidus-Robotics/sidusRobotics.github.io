@@ -3,13 +3,18 @@
     
 } */
 @keyframes point-down {
-    from {translate: 0px -4vmax;}
-    to {translate: 0px -1.75vmax;}
+    from {
+        opacity: 0;
+        translate: 0px -3vmax;
+    }
+    to {
+        translate: 0px -1.75vmax;
+    }
 }
 
 div#arrow-animation {
     animation-name: point-down;
-    animation-duration: 1000ms;
+    animation-duration: 1500ms;
     animation-iteration-count: infinite;
     animation-direction: alternate ;
 }
@@ -116,15 +121,20 @@ section.content-container#index-secondary-content img {
 }
 
 section#index-tertiary-content {
+    display: block;
+    justify-content: center;
+    align-items: center;
     padding-top: 1vmax;
-    margin: 0%;
+    /* margin: 0%; */
     color: black;
     background-color: lightgrey;
 }
 
 section#index-tertiary-content div{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    translate: 0 -50px;
 }
 /* translate is not a good solution tbh :/ */
 section#index-tertiary-content h1{
@@ -132,7 +142,7 @@ section#index-tertiary-content h1{
 }
 
 section#index-tertiary-content img {
-    max-width: 40.5vw;
+    max-width: 45.5vw;
 }
 
 section#index-tertiary-content h1#bronze-medal {
@@ -148,16 +158,11 @@ div.image-block {
     padding-bottom: 7vmax;
 }
 img#colab {
-    display: block;
-    max-height: 6vmax;
-    /* max-width: 5.5vmax; */
-    padding-bottom: 1vmax;
+    max-height: 10vmax;
+
 }
 img#pegnl {
-    display: block;
-    max-height: 10vmax;
-    /* max-width: 5.5vmax; */
-    /* padding-bottom: 1vmax; */
+    max-height: 15vmax;
 }
 
 @media only screen and (max-width: 1200px) {
