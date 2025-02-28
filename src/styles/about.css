@@ -72,8 +72,9 @@ img#sidus-about {
     padding: 0;
     z-index: -1;
 }
-#about-main-content, #about-secondary-content{
-    padding-bottom: 100vmax;
+
+section#about-main-content, section#about-secondary-content{
+    padding-bottom: 100px;
 }
 #about-main-content{
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%,
