@@ -13,6 +13,8 @@
 }
 
 div#arrow-animation {
+    display: block;
+    justify-self: center;
     animation-name: point-down;
     animation-duration: 1500ms;
     animation-iteration-count: infinite;
@@ -101,7 +103,6 @@ section.content-container h1 {
 }
 
 section.content-container#index-secondary-content {
-    background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(37,47,63,1) 69%);
 }
 section.content-container#index-secondary-content div.content{
@@ -180,6 +181,6 @@ img#pegnl {
     }
 
     div#arrow-animation img{
-        width: 4vmax;
+        width: 3vmax;
     }
 }

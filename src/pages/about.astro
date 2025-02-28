@@ -1,7 +1,9 @@
 ---
 // import { Image } from 'astro:assets';
 import Navigation from '../components/navigation.astro';
+import TeamPic from "../Images/TeamPic.png"
 import Footer from '../components/footer.astro';
+import Arrow from "../Images/Arrow.png"
 import "../styles/global.css"
 import "../styles/about.css"
 ---
@@ -24,11 +26,22 @@ import "../styles/about.css"
 	</head>
 	<body>
         <Navigation/>
+
+		<section class="content-container" id="about-background">
+
+			<div id="arrow-animation">
+				<img src={Arrow.src} alt="">
+			</div>
+
+			<img src={TeamPic.src} alt="siduslogo.png" id="sidus-about">
+
+			<div id="teampic-blur"></div>
+
+		</section>
 		<section class="content-container" id="about-main-content">
-		
 			<h1>OUR MISSION</h1>
-			
-			<div class="content" id="about-mission-statement">
+
+			<div>
 				<p>
 					Lorem ipsum dolor sit amet, 
 					consectetur adipiscing elit. 
@@ -47,6 +60,58 @@ import "../styles/about.css"
 					Mauris iaculis sed ex tristique rutrum. 
 					In dapibus arcu blandit arcu volutpat, 
 					et aliquam metus rhoncus.
+					Lorem ipsum dolor sit amet, 
+					consectetur adipiscing elit. 
+					Praesent vel mauris et turpis 
+					pellentesque consequat ac sed nisl. 
+					Duis varius ligula massa, et aliquet 
+					massa ullamcorper vel. Aenean sit amet nisi vel 
+					tortor commodo mollis in sed urna. Vestibulum ante 
+					ipsum primis in faucibus orci luctus et ultrices 
+					posuere cubilia curae; Class aptent taciti sociosqu 
+					ad litora torquent per conubia nostra, per inceptos 
+					himenaeos. Curabitur laoreet pharetra ultricies. 
+					Phasellus euismod, sapien vehicula porta interdum, 
+					nisi lectus porta tortor, id semper arcu lectus id dui.
+				</p>
+			</div>
+		</section>
+		
+		<section class="content-container" id="about-secondary-content">
+			<h1>UP AND COMING</h1>
+
+			<div>
+				<p>
+					Lorem ipsum dolor sit amet, 
+					consectetur adipiscing elit. 
+					Praesent vel mauris et turpis 
+					pellentesque consequat ac sed nisl. 
+					Duis varius ligula massa, et aliquet 
+					massa ullamcorper vel. Aenean sit amet nisi vel 
+					tortor commodo mollis in sed urna. Vestibulum ante 
+					ipsum primis in faucibus orci luctus et ultrices 
+					posuere cubilia curae; Class aptent taciti sociosqu 
+					ad litora torquent per conubia nostra, per inceptos 
+					himenaeos. Curabitur laoreet pharetra ultricies. 
+					Phasellus euismod, sapien vehicula porta interdum, 
+					nisi lectus porta tortor, id semper arcu lectus id dui.
+					Praesent posuere vestibulum accumsan. 
+					Mauris iaculis sed ex tristique rutrum. 
+					In dapibus arcu blandit arcu volutpat, 
+					et aliquam metus rhoncus.
+					Lorem ipsum dolor sit amet, 
+					consectetur adipiscing elit. 
+					Praesent vel mauris et turpis 
+					pellentesque consequat ac sed nisl. 
+					Duis varius ligula massa, et aliquet 
+					massa ullamcorper vel. Aenean sit amet nisi vel 
+					tortor commodo mollis in sed urna. Vestibulum ante 
+					ipsum primis in faucibus orci luctus et ultrices 
+					posuere cubilia curae; Class aptent taciti sociosqu 
+					ad litora torquent per conubia nostra, per inceptos 
+					himenaeos. Curabitur laoreet pharetra ultricies. 
+					Phasellus euismod, sapien vehicula porta interdum, 
+					nisi lectus porta tortor, id semper arcu lectus id dui.
 				</p>
 			</div>
 		</section>
