@@ -28,3 +28,9 @@ footer p {
         font-size: 1.25vmax;
     }
 }
+
+@media only screen and (max-width: 334px) {
+    footer p {
+        font-size: 0.95vmax;
+    }
+}
