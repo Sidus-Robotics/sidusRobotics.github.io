@@ -104,3 +104,32 @@ section#about-background{
     width: 300px;
     max-width: 80vw;
 }
+#about-tertiary-content {
+    padding-top: 1vmax;
+    background: linear-gradient(0deg, rgba(3,3,3,0.4) 5%,
+            rgba(17,27,40,1) 60%, rgba(37,47,63,1) 100%);
+}
+#about-tertiary-content h2 {
+    display: block;
+    justify-self: center;
+}
+#about-tertiary-content .member-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#about-tertiary-content .member-container div {
+    padding: 50px;
+    margin: 1vmax;
+    max-width: 2vmax;
+    background-color: blue;
+    border-radius: 10px;
+    
+}
+
+@media only screen and (max-width: 1200px) {
+    #about-tertiary-content .member-container {
+        flex-wrap: wrap;
+    }
+}
