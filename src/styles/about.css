@@ -97,3 +97,10 @@ section#about-background{
     color: black;
     background-color: lightgrey;
 }
+
+#about-secondary-content img {
+    display: block;
+    justify-self: center;
+    width: 300px;
+    max-width: 80vw;
+}
