@@ -113,9 +113,11 @@ section#about-background{
     display: block;
     justify-self: center;
 }
-/* #about-tertiary-content img{
+#about-tertiary-content img.member {
     max-width: fit-content;
-} */
+    background-color: lightgrey;
+    border-radius: 5%;
+}
 
 #about-tertiary-content .member-container {
     display: flex;
@@ -129,7 +131,6 @@ section#about-background{
     margin: 1.5vmax 1.5vmax 10vmax 1.5vmax;
     max-width: fit-content;
     max-height: fit-content;
-    background-color: lightgrey;
     border-radius: 10px;
     
 }
