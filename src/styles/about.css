@@ -114,8 +114,10 @@ section#about-background{
     justify-self: center;
 }
 #about-tertiary-content img.member {
+    padding-top: 5px;
     max-width: fit-content;
     background-color: lightgrey;
+    filter: drop-shadow(6px 6px 4px black);
     border-radius: 5%;
 }
 
