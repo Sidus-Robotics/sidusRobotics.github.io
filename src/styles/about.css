@@ -113,22 +113,28 @@ section#about-background{
     display: block;
     justify-self: center;
 }
+/* #about-tertiary-content img{
+    max-width: fit-content;
+} */
+
 #about-tertiary-content .member-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    text-align: center;
 }
 
 #about-tertiary-content .member-container div {
-    padding: 50px;
-    margin: 1vmax;
-    max-width: 2vmax;
-    background-color: blue;
+    padding: 20px;
+    margin: 1.5vmax 1.5vmax 10vmax 1.5vmax;
+    max-width: fit-content;
+    max-height: fit-content;
+    background-color: lightgrey;
     border-radius: 10px;
     
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1600px) {
     #about-tertiary-content .member-container {
         flex-wrap: wrap;
     }
