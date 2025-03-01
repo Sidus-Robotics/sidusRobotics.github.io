@@ -1,5 +1,4 @@
 .blur-load::before {
-    /* inset: 100px; */
     max-width: max-content;
 }
 img#sidus-index {
@@ -39,15 +38,17 @@ section #summary p{
 section.content-container#index-secondary-content {
     background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(37,47,63,1) 69%);
 }
-section.content-container#index-secondary-content div.content{
+section.content-container#index-secondary-content .content{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     margin-top: 10vh;
 }
 section.content-container#index-secondary-content h1 {
     translate: 0 20px;
 }
 section.content-container#index-secondary-content div p{
+    width: 20vmax;
     text-align:left;
     margin: 2vmax 2vmax;
 }
@@ -55,6 +56,7 @@ section.content-container#index-secondary-content div p{
 section.content-container#index-secondary-content img {
     display: block;
     margin: auto;
+    width: 10vmax;
 }
 
 section#index-tertiary-content {
@@ -109,6 +111,10 @@ img#pegnl {
     section.content-container#index-secondary-content div.content{
         display: flex;
         flex-direction: column;
+    }
+
+    section.content-container#index-secondary-content .content p{
+        width: auto;
     }
 
     h1#countdown {
