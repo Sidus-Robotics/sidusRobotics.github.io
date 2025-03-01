@@ -23,18 +23,22 @@ import "../styles/about.css"
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Sidus Robotics</title>
+		<script src="../components/lazyload.js" />
 	</head>
 	<body>
         <Navigation/>
 
 		<section class="content-container" id="about-background">
 
+			
 			<div id="arrow-animation">
 				<img src={Arrow.src} alt="">
 			</div>
-			
-			<img src={TeamPic.src} alt="siduslogo.png" id="sidus-about">
-
+	
+			<div class="blur-load">
+				<img loading="lazy" src={TeamPic.src} alt="siduslogo.png" id="sidus-about">
+			</div>
+		
 			<div id="about-animation">
 				<h1 id="about1">ABOUT US</h1>
 				<h1 id="about2">ABOUT US</h1>
@@ -120,7 +124,7 @@ import "../styles/about.css"
 					Phasellus euismod, sapien vehicula porta interdum, 
 					nisi lectus porta tortor, id semper arcu lectus id dui.
 				</p>
-				<img src={CIRC.src} alt="">
+				<img loading="lazy" src={CIRC.src} alt="">
 			</div>
 		</section>
 
@@ -130,53 +134,53 @@ import "../styles/about.css"
 			<div class="mechanical-row">
 				<h2>MECHANICAL</h2>
 				<div class="member-container">
-					<div>
-						<img src={Placeholder.src} alt="" class="member">
+					<div class="blur-load">
+						<img loading="lazy" src={Placeholder.src} alt="" class="member">
 						<h3>Placeholder</h3>
 						<h4>Placeholder</h4>
-						<a href=""><img src={LinkedIn.src} alt=""></a>
+						<a href=""><img loading="lazy" src={LinkedIn.src} alt=""></a>
 					</div>
 
-					<div>
-						<img src={Placeholder.src} alt="" class="member">
+					<div class="blur-load">
+						<img loading="lazy" src={Placeholder.src} alt="" class="member">
 						<h3>Placeholder</h3>
 						<h4>Placeholder</h4>
-						<a href=""><img src={LinkedIn.src} alt=""></a>
+						<a href=""><img loading="lazy" src={LinkedIn.src} alt=""></a>
 					</div>
 
-					<div>
-						<img src={Placeholder.src} alt="" class="member">
+					<div class="blur-load">
+						<img loading="lazy" src={Placeholder.src} alt="" class="member">
 						<h3>Placeholder</h3>
 						<h4>Placeholder</h4>
-						<a href=""><img src={LinkedIn.src} alt=""></a>
+						<a href=""><img loading="lazy" src={LinkedIn.src} alt=""></a>
 					</div>
 
-					<div>
-						<img src={Placeholder.src} alt="" class="member">
+					<div class="blur-load">
+						<img loading="lazy" src={Placeholder.src} alt="" class="member">
 						<h3>Placeholder</h3>
 						<h4>Placeholder</h4>
-						<a href=""><img src={LinkedIn.src} alt=""></a>
+						<a href=""><img loading="lazy" src={LinkedIn.src} alt=""></a>
 					</div>
 
-					<div>
-						<img src={Placeholder.src} alt="" class="member">
+					<div class="blur-load">
+						<img loading="lazy" src={Placeholder.src} alt="" class="member">
 						<h3>Placeholder</h3>
 						<h4>Placeholder</h4>
-						<a href=""><img src={LinkedIn.src} alt=""></a>
+						<a href=""><img loading="lazy" src={LinkedIn.src} alt=""></a>
 					</div>
 
-					<div>
-						<img src={Placeholder.src} alt="" class="member">
+					<div class="blur-load">
+						<img loading="lazy" src={Placeholder.src} alt="" class="member">
 						<h3>Placeholder</h3>
 						<h4>Placeholder</h4>
-						<a href=""><img src={LinkedIn.src} alt=""></a>
+						<a href=""><img loading="lazy" src={LinkedIn.src} alt=""></a>
 					</div>
 
-					<div>
-						<img src={Placeholder.src} alt="" class="member">
+					<div class="blur-load">
+						<img loading="lazy" src={Placeholder.src} alt="" class="member">
 						<h3>Placeholder</h3>
 						<h4>Placeholder</h4>
-						<a href=""><img src={LinkedIn.src} alt=""></a>
+						<a href=""><img loading="lazy" src={LinkedIn.src} alt=""></a>
 					</div>
 				</div>
 			</div>
@@ -184,46 +188,46 @@ import "../styles/about.css"
 			<div class="software-row">
 				<h2>SOFTWARE</h2>
 				<div class="member-container">
-					<div>
-						<img src={Placeholder.src} alt="" class="member">
+					<div class="blur-load">
+						<img loading="lazy" src={Placeholder.src} alt="" class="member">
 						<h3>Placeholder</h3>
 						<h4>Placeholder</h4>
-						<a href=""><img src={LinkedIn.src} alt=""></a>
+						<a href=""><img loading="lazy" src={LinkedIn.src} alt=""></a>
 					</div>
 
-					<div>
-						<img src={Placeholder.src} alt="" class="member">
+					<div class="blur-load">
+						<img loading="lazy" src={Placeholder.src} alt="" class="member">
 						<h3>Placeholder</h3>
 						<h4>Placeholder</h4>
-						<a href=""><img src={LinkedIn.src} alt=""></a>
+						<a href=""><img loading="lazy" src={LinkedIn.src} alt=""></a>
 					</div>
 
-					<div>
-						<img src={Placeholder.src} alt="" class="member">
+					<div class="blur-load">
+						<img loading="lazy" src={Placeholder.src} alt="" class="member">
 						<h3>Placeholder</h3>
 						<h4>Placeholder</h4>
-						<a href=""><img src={LinkedIn.src} alt=""></a>
+						<a href=""><img loading="lazy" src={LinkedIn.src} alt=""></a>
 					</div>
 
-					<div>
-						<img src={Placeholder.src} alt="" class="member">
+					<div class="blur-load">
+						<img loading="lazy" src={Placeholder.src} alt="" class="member">
 						<h3>Placeholder</h3>
 						<h4>Placeholder</h4>
-						<a href=""><img src={LinkedIn.src} alt=""></a>
+						<a href=""><img loading="lazy" src={LinkedIn.src} alt=""></a>
 					</div>
 
-					<div>
-						<img src={Placeholder.src} alt="" class="member">
+					<div class="blur-load">
+						<img loading="lazy" src={Placeholder.src} alt="" class="member">
 						<h3>Placeholder</h3>
 						<h4>Placeholder</h4>
-						<a href=""><img src={LinkedIn.src} alt=""></a>
+						<a href=""><img loading="lazy" src={LinkedIn.src} alt=""></a>
 					</div>
 					
-					<div>
-						<img src={Placeholder.src} alt="" class="member">
+					<div class="blur-load">
+						<img loading="lazy" src={Placeholder.src} alt="" class="member">
 						<h3>Placeholder</h3>
 						<h4>Placeholder</h4>
-						<a href=""><img src={LinkedIn.src} alt=""></a>
+						<a href=""><img loading="lazy" src={LinkedIn.src} alt=""></a>
 					</div>
 				</div>
 			</div>
@@ -231,39 +235,39 @@ import "../styles/about.css"
 			<div class="electrical-row">
 				<h2>ELECTRICAL</h2>
 				<div class="member-container">
-					<div>
-						<img src={Placeholder.src} alt="" class="member">
+					<div class="blur-load">
+						<img loading="lazy" src={Placeholder.src} alt="" class="member">
 						<h3>Placeholder</h3>
 						<h4>Placeholder</h4>
-						<a href=""><img src={LinkedIn.src} alt=""></a>
+						<a href=""><img loading="lazy" src={LinkedIn.src} alt=""></a>
 					</div>
 
-					<div>
-						<img src={Placeholder.src} alt="" class="member">
+					<div class="blur-load">
+						<img loading="lazy" src={Placeholder.src} alt="" class="member">
 						<h3>Placeholder</h3>
 						<h4>Placeholder</h4>
-						<a href=""><img src={LinkedIn.src} alt=""></a>
+						<a href=""><img loading="lazy" src={LinkedIn.src} alt=""></a>
 					</div>
 
-					<div>
-						<img src={Placeholder.src} alt="" class="member">
+					<div class="blur-load">
+						<img loading="lazy" src={Placeholder.src} alt="" class="member">
 						<h3>Placeholder</h3>
 						<h4>Placeholder</h4>
-						<a href=""><img src={LinkedIn.src} alt=""></a>
+						<a href=""><img loading="lazy" src={LinkedIn.src} alt=""></a>
 					</div>
 
-					<div>
-						<img src={Placeholder.src} alt="" class="member">
+					<div class="blur-load">
+						<img loading="lazy" src={Placeholder.src} alt="" class="member">
 						<h3>Placeholder</h3>
 						<h4>Placeholder</h4>
-						<a href=""><img src={LinkedIn.src} alt=""></a>
+						<a href=""><img loading="lazy" src={LinkedIn.src} alt=""></a>
 					</div>
 
-					<div>
-						<img src={Placeholder.src} alt="" class="member">
+					<div class="blur-load">
+						<img loading="lazy" src={Placeholder.src} alt="" class="member">
 						<h3>Placeholder</h3>
 						<h4>Placeholder</h4>
-						<a href=""><img src={LinkedIn.src} alt=""></a>
+						<a href=""><img loading="lazy" src={LinkedIn.src} alt=""></a>
 					</div>
 				</div>
 			</div>
@@ -271,18 +275,18 @@ import "../styles/about.css"
 			<div class="business-row">
 				<h2>BUSINESS</h2>
 				<div class="member-container">
-					<div>
-						<img src={Placeholder.src} alt="" class="member">
+					<div class="blur-load">
+						<img loading="lazy" src={Placeholder.src} alt="" class="member">
 						<h3>Placeholder</h3>
 						<h4>Placeholder</h4>
-						<a href=""><img src={LinkedIn.src} alt=""></a>
+						<a href=""><img loading="lazy" src={LinkedIn.src} alt=""></a>
 					</div>
 
-					<div>
-						<img src={Placeholder.src} alt="" class="member">
+					<div class="blur-load">
+						<img loading="lazy" src={Placeholder.src} alt="" class="member">
 						<h3>Placeholder</h3>
 						<h4>Placeholder</h4>
-						<a href=""><img src={LinkedIn.src} alt=""></a>
+						<a href=""><img loading="lazy" src={LinkedIn.src} alt=""></a>
 					</div>
 				</div>
 			</div>

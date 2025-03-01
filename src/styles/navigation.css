@@ -1,3 +1,6 @@
+.blur-load::before {
+    animation: none;
+}
 header {
     display: flex;
     position: fixed;
@@ -5,15 +8,13 @@ header {
     min-height: 10px;
     top: 0;
     background-color: black;
-    padding-bottom: 4.5vmax;
-    z-index: 1;
+    z-index: 2;
 }
 
 header img{
-    position: absolute;
-    top: 0.05vmax;
-    left: 25px;
+    translate: 1vmax 0;
     min-width: 0.5vmax;
+    width: 4.5vmax;
     max-width: 4.5vmax;
 }
 

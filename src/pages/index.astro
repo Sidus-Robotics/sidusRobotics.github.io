@@ -11,6 +11,7 @@ import Electrical from "../Images/Power.png"
 import Colab from "../Images/colab.png"
 import Pegnl from "../Images/pegnl.svg"
 import "../styles/global.css"
+import "../styles/index.css"
 ---
 
 <html lang="en">
@@ -24,21 +25,25 @@ import "../styles/global.css"
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Sidus Robotics</title>
+		<script src="../components/countdown.js"/>
+		<script src="../components/lazyload.js" />
 	</head>
 
 	<body>
 		<Navigation/>
 
 		<section class="content-container" id="index-background">
-			<img src={FullLogo.src} alt="siduslogo.png" id="sidus-index">
-			<!-- <img src={Mars.src} alt="mars.jpg"> -->
 			
+			<div class="blur-load">
+				<img loading="lazy" src={FullLogo.src} alt="siduslogo.png" id="sidus-index">
+			</div>
+	
 			<h1 id="countdown">ETA: -- WEEKS -- DAYS -- HOURS -- MINUTES -- SECONDS</h1>
-			<script src="../components/countdown.js"/>
 
 			<div id="arrow-animation">
 				<img src={Arrow.src} alt="">
 			</div>
+	
 		</section>
 
 		<section class="content-container" id="index-main-content">
@@ -74,7 +79,9 @@ import "../styles/global.css"
 
 				<div class="info-blocks" id="software-block">
 					<h3>MECHANICAL</h3>
-					<img src={Mechanical.src} alt="gear.png">
+					<div class="blur-load">
+						<img loading="lazy" src={Mechanical.src} alt="gear.png">
+					</div>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 						Praesent vel mauris et turpis pellentesque consequat ac sed nisl. 
@@ -87,7 +94,9 @@ import "../styles/global.css"
 				
 				<div class="info-blocks" id="business-block">
 					<h3>SOFTWARE</h3>
-					<img src={Software.src} alt="" class="bigger-icon-fix">
+					<div class="blur-load">
+						<img loading="lazy" src={Software.src} alt="" class="bigger-icon-fix">
+					</div>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 						Praesent vel mauris et turpis pellentesque consequat ac sed nisl. 
@@ -100,7 +109,9 @@ import "../styles/global.css"
 				
 				<div class="info-blocks" id="mechanical-block">
 					<h3>ELECTRICAL</h3>
-					<img src={Electrical.src} alt="">
+					<div class="blur-load">
+						<img loading="lazy" src={Electrical.src} alt="">
+					</div>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 						Praesent vel mauris et turpis pellentesque consequat ac sed nisl. 
@@ -113,7 +124,9 @@ import "../styles/global.css"
 				
 				<div class="info-blocks" id="electrical-block">
 					<h3>BUSINESS</h3>
-					<img src={Business.src} alt="briefcase.png">
+					<div class="blur-load">
+						<img loading="lazy" src={Business.src} alt="briefcase.png">
+					</div>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 						Praesent vel mauris et turpis pellentesque consequat ac sed nisl. 
@@ -130,8 +143,10 @@ import "../styles/global.css"
 			<h1>SPONSORS</h1>
 			<h1 class="" id="bronze-medal">BRONZE</h1>
 			<div class="image-block">
-				<img src={Colab.src} alt="colab.png" id="colab">
-				<img src={Pegnl.src} alt="pegnl.svg" id="pegnl">
+				<div class="blur-load">
+					<img loading="lazy" src={Colab.src} alt="colab.png" id="colab">
+					<img loading="lazy" src={Pegnl.src} alt="pegnl.svg" id="pegnl">
+				</div>	
 			</div>
 		</section>
 		<Footer/>

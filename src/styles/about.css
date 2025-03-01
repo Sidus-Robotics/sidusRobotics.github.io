@@ -4,6 +4,7 @@
         translate: 0px 38vw;
     }
     to {
+        opacity: 1;
         translate: 0px 39vw;
     }
 }
@@ -16,6 +17,11 @@
         opacity: 1;
     }
 }
+
+.member-container .blur-load::before {
+    border-radius: 10px 10px;
+}
+
 #teampic-blur {
     background: linear-gradient(180deg, rgba(0,0,0,0.9) 10%, rgba(0,0,0,0) 100%);
     top: 0;
@@ -24,7 +30,7 @@
     height: 58vw;
     max-width: 100vw;
     width: 100vw;
-    z-index: -1;
+    z-index: 1;
 }
 
 #about-animation {
@@ -34,9 +40,11 @@
 }
 
 #about1 , #about2, #about3{
+    position: relative;
     font-size: 4.5vmax;
     padding: 0.1vmax;
     filter: drop-shadow(1px 4px 0px black);
+    z-index: 2;
 }
 
 #about1 {
@@ -65,12 +73,14 @@
     animation-timing-function: ease-in-out;
     animation-delay: 1000ms;
 }
+
 img#sidus-about {
-    position: relative;
+    /* position: relative; */
     max-width: 100vw;
     width: 100vw;
     padding: 0;
-    z-index: -1;
+    /* z-index: -1; */
+    aspect-ratio: 2/1;
 }
 
 section#about-main-content, section#about-secondary-content{
@@ -101,8 +111,9 @@ section#about-background{
 #about-secondary-content img {
     display: block;
     justify-self: center;
-    width: 300px;
-    max-width: 80vw;
+    min-width: 250px;
+    max-width: 20vw;
+    aspect-ratio: 0;
 }
 #about-tertiary-content {
     padding-top: 1vmax;
@@ -135,6 +146,10 @@ section#about-background{
     max-height: fit-content;
     border-radius: 10px;
     
+}
+
+#about-tertiary-content .member-container a img {
+    width: auto;
 }
 
 @media only screen and (max-width: 1600px) {
