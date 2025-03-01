@@ -156,4 +156,7 @@ section#about-background{
     #about-tertiary-content .member-container {
         flex-wrap: wrap;
     }
+    #about-tertiary-content .member-container img {
+        width: 12vmax;
+    }
 }
