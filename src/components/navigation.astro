@@ -4,8 +4,8 @@ import "../styles/navigation.css"
 import "../styles/global.css"
 ---
 <header>
-    <a href="/"><img src={LogoStar.src} alt=""></a>
-
+    <a href="/"><img loading="lazy" src={LogoStar.src} alt=""></a>
+  
     <input class="drop-down" type="checkbox"></input>
 
     <div class="menu-container">
@@ -20,6 +20,6 @@ import "../styles/global.css"
         <a href="/" class="link">HOME</a>
         <a href="/about" class="link">ABOUT</a>
         <a href="/sponsors" class="link">SPONSORS</a>
-        <a href="/contact" class="link">CONTACT</a>
+        <a href="mailto:sidusrobotics@gmail.com?subject=Inquiries" target="_blank" class="link">CONTACT</a>
     </nav>
 </header>
