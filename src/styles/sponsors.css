@@ -45,6 +45,27 @@
   padding: 0 0 50px 0;
 }
 
+.banner {
+  opacity: 0;
+  transition: opacity 2s ease-out;
+}
+
+.banner:nth-child(1){
+  transition-delay: 500ms;
+}
+.banner:nth-child(2){
+  transition-delay: 1000ms;
+}
+.banner:nth-child(3){
+  transition-delay: 1500ms;
+}
+.banner:nth-child(4){
+  transition-delay: 2000ms;
+}
+.banner.show {
+  opacity: 1;
+}
+
 .banner img {
   aspect-ratio: 1/4;
   margin: 0 20px 0 20px;
@@ -57,19 +78,6 @@
   width: 285px;
 }
 
-/* .link {
-  text-decoration: none;
-  color: black;
-  font-family: "IBM Plex Mono";
-  font-size:larger;
-  font-weight: bold;
-}
-.link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: auto;
-} */
 #sponsors-secondary-content {
   display: flex;
   justify-content: center;
