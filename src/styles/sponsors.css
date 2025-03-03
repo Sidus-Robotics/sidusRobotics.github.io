@@ -186,6 +186,7 @@
     width: 100px;
     height: 100px; */
   }
+
   @keyframes point-down {
     from {
         opacity: 0;
@@ -194,5 +195,11 @@
     to {
         translate: 0px 0vmax;
     }
+  }
+
+  #sponsors-secondary-content {
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
   }
 }
