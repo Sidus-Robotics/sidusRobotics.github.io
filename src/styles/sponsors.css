@@ -23,29 +23,29 @@
 .banner.show:nth-child(1){
   opacity: 1;
   animation: growDown 900ms ease-in-out forwards;
-  transition-delay: 250ms;
-  animation-delay: 250ms;
+  transition-delay: 100ms;
+  animation-delay: 100ms;
   transform-origin: top center;
 }
 .banner.show:nth-child(2){
   opacity: 1;
   animation: growDown 900ms ease-in-out forwards;
-  transition-delay: 500ms;
-  animation-delay: 500ms;
+  transition-delay: 200ms;
+  animation-delay: 200ms;
   transform-origin: top center;
 }
 .banner.show:nth-child(3){
   opacity: 1;
   animation: growDown 900ms ease-in-out forwards;
-  transition-delay: 750ms;
-  animation-delay: 750ms;
+  transition-delay: 300ms;
+  animation-delay: 300ms;
   transform-origin: top center;
 }
 .banner.show:nth-child(4){
   opacity: 1;
   animation: growDown 900ms ease-in-out forwards;
-  transition-delay: 1000ms;
-  animation-delay: 1000ms;
+  transition-delay: 400ms;
+  animation-delay: 400ms;
   transform-origin: top center;
 }
 
@@ -61,27 +61,37 @@
 .banner.show:nth-child(1) .text-content{
 
   animation: fadeIn 1000ms ease-in-out forwards;
-  transition-delay: 2000ms;
-  animation-delay: 2000ms;
+  transition-delay: 100ms;
+  animation-delay: 100ms;
 }
 .banner.show:nth-child(2) .text-content{
 
   animation: fadeIn 1000ms ease-in-out forwards;
-  transition-delay: 2000ms;
-  animation-delay: 2000ms;
+  transition-delay: 200ms;
+  animation-delay: 200ms;
 
 }
 .banner.show:nth-child(3) .text-content{
 
   animation: fadeIn 1000ms ease-in-out forwards;
-  transition-delay: 2000ms;
-  animation-delay: 2000ms;
+  transition-delay: 300ms;
+  animation-delay: 300ms;
 }
 .banner.show:nth-child(4) .text-content{
 
   animation: fadeIn 1000ms ease-in-out forwards;
-  transition-delay: 2000ms;
-  animation-delay: 2000ms;
+  transition-delay: 400ms;
+  animation-delay: 400ms;
+}
+
+@keyframes point-down {
+  from {
+      opacity: 0;
+      translate: 0px 3vmax;
+  }
+  to {
+      translate: 0px 4vmax;
+  }
 }
 
 #sponsors-main-content{
@@ -90,13 +100,13 @@
     rgba(37,47,63,1) 100%);
 }
 #sponsors-background h1 {
-  transform: translateY(200px);
+  transform: translateY(15vmax);
 }
 .content{
   display: flex;
   justify-content: center;
-  transform: translateY(200px);
-  height: 80vh; 
+  transform: translateY(15vmax);
+  height: 70vh; 
 }
 
 .content-container p{
@@ -166,5 +176,14 @@
     /* aspect-ratio: 1/5;
     width: 100px;
     height: 100px; */
+  }
+  @keyframes point-down {
+    from {
+        opacity: 0;
+        translate: 0px -1vmax;
+    }
+    to {
+        translate: 0px 0vmax;
+    }
   }
 }
