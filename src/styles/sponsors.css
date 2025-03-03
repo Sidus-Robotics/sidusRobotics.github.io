@@ -1,0 +1,105 @@
+/* Sponsors*/
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 3rem 1rem 4rem;
+}
+
+main h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    letter-spacing: 0.05em;
+}
+
+main p {
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    line-height: 1.4;
+}
+
+/* Sponsor Banners */
+.banner-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.sponsor-tier {
+    position: relative;
+    width: 160px;
+    margin-bottom: 2rem;
+}
+
+/* The tier image */
+.sponsor-tier img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Text overlaid on the banner */
+.tier-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    padding: 1rem;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.tier-content h2 {
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+.tier-content h3 {
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.tier-content p {
+    text-transform: none;
+    font-size: 0.85rem;
+    line-height: 1.3;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+    background-color: #ddd;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+/* Optional styling for a bigger logo in the contact section */
+.contact-section .sidus-logo img {
+    width: 200px;
+    height: auto;
+}
+
+/* Envelope icon styling */
+.contact-section .envelope img {
+    width: 80px;
+    height: auto;
+}
+
+.contact-section .email {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
