@@ -1,9 +1,93 @@
 .blur-load::before {
   max-width: max-content;
 }
+@keyframes growDown {
+  0% {
+      transform: scaleY(0.1)
+  }
+  80% {
+      transform: scaleY(1)
+  }
+  100% {
+      transform: scaleY(1)
+  }
+}
+
+.banner {
+  transform: scaleY(0.1);
+  transform-origin: top center;
+}
+.banner .text-content{
+  opacity: 0;
+}
+.banner.show:nth-child(1){
+  opacity: 1;
+  animation: growDown 900ms ease-in-out forwards;
+  transition-delay: 250ms;
+  animation-delay: 250ms;
+  transform-origin: top center;
+}
+.banner.show:nth-child(2){
+  opacity: 1;
+  animation: growDown 900ms ease-in-out forwards;
+  transition-delay: 500ms;
+  animation-delay: 500ms;
+  transform-origin: top center;
+}
+.banner.show:nth-child(3){
+  opacity: 1;
+  animation: growDown 900ms ease-in-out forwards;
+  transition-delay: 750ms;
+  animation-delay: 750ms;
+  transform-origin: top center;
+}
+.banner.show:nth-child(4){
+  opacity: 1;
+  animation: growDown 900ms ease-in-out forwards;
+  transition-delay: 1000ms;
+  animation-delay: 1000ms;
+  transform-origin: top center;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.banner.show:nth-child(1) .text-content{
+
+  animation: fadeIn 1000ms ease-in-out forwards;
+  transition-delay: 2000ms;
+  animation-delay: 2000ms;
+}
+.banner.show:nth-child(2) .text-content{
+
+  animation: fadeIn 1000ms ease-in-out forwards;
+  transition-delay: 2000ms;
+  animation-delay: 2000ms;
+
+}
+.banner.show:nth-child(3) .text-content{
+
+  animation: fadeIn 1000ms ease-in-out forwards;
+  transition-delay: 2000ms;
+  animation-delay: 2000ms;
+}
+.banner.show:nth-child(4) .text-content{
+
+  animation: fadeIn 1000ms ease-in-out forwards;
+  transition-delay: 2000ms;
+  animation-delay: 2000ms;
+}
 
 #sponsors-main-content{
-  background: linear-gradient(180deg, rgba(0,0,0,0.25) 5%, rgba(37,47,63,1) 69%);
+  background: linear-gradient(180deg, rgba(0,0,0,0.25) 5%, 
+    rgba(17,27,40,1) 60%,
+    rgba(37,47,63,1) 100%);
 }
 #sponsors-background h1 {
   transform: translateY(200px);
@@ -29,7 +113,9 @@
 }
 
 .banner-container h1 {
-  letter-spacing: 5px;
+  letter-spacing: 10px;
+  font-size: xx-large;
+  font-weight: bolder;
 }
 .banner-container h1, h2, h3{
   display: flex;
@@ -45,27 +131,6 @@
   padding: 0 0 50px 0;
 }
 
-.banner {
-  opacity: 0;
-  transition: opacity 2s ease-out;
-}
-
-.banner:nth-child(1){
-  transition-delay: 500ms;
-}
-.banner:nth-child(2){
-  transition-delay: 1000ms;
-}
-.banner:nth-child(3){
-  transition-delay: 1500ms;
-}
-.banner:nth-child(4){
-  transition-delay: 2000ms;
-}
-.banner.show {
-  opacity: 1;
-}
-
 .banner img {
   aspect-ratio: 1/4;
   margin: 0 20px 0 20px;
@@ -74,6 +139,7 @@
 }
 
 .banner ul li {
+  font-weight: bold;
   text-align: left;
   width: 285px;
 }
