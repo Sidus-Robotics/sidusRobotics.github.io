@@ -12,7 +12,7 @@
     }
 }
 
-img#sidus-index {
+.blur-load.loaded img#sidus-index {
     aspect-ratio: 0;
     translate: 0 50px;
     opacity: 0;
