@@ -30,13 +30,26 @@
     background: linear-gradient(180deg, rgba(0,0,0,0.9) 10%, rgba(0,0,0,0) 100%);
     top: 0;
     position: absolute;
-    min-height: 275px;
+    /* min-height: 275px; */
     height: 58vw;
     max-width: 100vw;
     width: 100vw;
     z-index: 1;
+    visibility: hidden;
 }
 
+.blur-load #sidus-about {
+    height: 50vw;
+    max-width: 100vw;
+}
+.blur-load.loaded ~ #teampic-blur{
+    visibility: visible;
+}
+
+.blur-load .member {
+    width: 10vmax;
+    max-width: 10vmax;
+}
 #about-animation {
     left: 10px;
     top: 4.5vmax;
@@ -81,7 +94,7 @@
 img#sidus-about {
     /* position: relative; */
     max-width: 100%;
-    width: 100%;
+    /* width: 100%; */
     padding: 0;
     /* z-index: -1; */
     aspect-ratio: 2/1;
@@ -129,7 +142,7 @@ section#about-background{
     justify-self: center;
 }
 img.member {
-    max-width: 12vmax;
+    max-width: 15vmax;
     background-color: lightgrey;
     filter: drop-shadow(6px 6px 4px black);
     border-radius: 5%;
@@ -140,10 +153,11 @@ img.member {
     flex-direction: row;
     justify-content: center;
     text-align: center;
+
 }
 
 .member-container div {
-    padding: 20px;
+    /* padding: 20px; */
     margin: 1.5vmax 1.5vmax 10vmax 1.5vmax;
     max-width: fit-content;
     max-height: fit-content;
@@ -155,11 +169,13 @@ img.member {
     width: auto;
 }
 
+
 @media only screen and (max-width: 1600px) {
     .member-container {
         flex-wrap: wrap;
     }
-    .member-container img {
-        width: 12vmax;
+    img.member {
+        /* width: 50vmax; */
+        max-width: 18vmax;
     }
 }
