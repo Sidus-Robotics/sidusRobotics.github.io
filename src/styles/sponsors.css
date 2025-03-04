@@ -174,8 +174,8 @@
 }
 #sponsors-secondary-content div:nth-child(1) img{
   /* width: 25vw; */
-  max-width: 32vw;
-  aspect-ratio: 2/1.1;
+  max-width: 25vw;
+  aspect-ratio: 0;
 }
 #sponsors-secondary-content div:nth-child(2) img{
   aspect-ratio: 0;
