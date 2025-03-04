@@ -9,6 +9,10 @@
     }
 }
 
+#arrow-animation {
+    position: relative;
+    z-index: 1;
+}
 @keyframes alternating {
     from {
         opacity: 0;
