@@ -49,6 +49,7 @@
 .blur-load .member {
     width: 10vmax;
     max-width: 10vmax;
+    max-height: 10vmax;
 }
 #about-animation {
     left: 10px;
