@@ -118,6 +118,7 @@ input:checked ~ div.menu-container div.bar1 {
     nav a {
         translate: 20px -45vmax;
         padding-bottom: 0.25vmax;
+        padding-right: 2vmax;
         font-size: 3vmax;
     }
     div.blur {

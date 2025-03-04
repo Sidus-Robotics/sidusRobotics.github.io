@@ -1,6 +1,7 @@
 .blur-load::before {
-  max-width: max-content;
+  max-width: fit-content;
 }
+
 @keyframes growDown {
   0% {
       transform: scaleY(0.1)
@@ -20,28 +21,28 @@
 .banner .text-content{
   opacity: 0;
 }
-.banner.show:nth-child(1){
+.blur-load.loaded.show:nth-child(1) > .banner{
   opacity: 1;
   animation: growDown 900ms ease-in-out forwards;
   transition-delay: 100ms;
   animation-delay: 100ms;
   transform-origin: top center;
 }
-.banner.show:nth-child(2){
+.blur-load.loaded.show:nth-child(2) > .banner{
   opacity: 1;
   animation: growDown 900ms ease-in-out forwards;
   transition-delay: 200ms;
   animation-delay: 200ms;
   transform-origin: top center;
 }
-.banner.show:nth-child(3){
+.blur-load.loaded.show:nth-child(3) > .banner{
   opacity: 1;
   animation: growDown 900ms ease-in-out forwards;
   transition-delay: 300ms;
   animation-delay: 300ms;
   transform-origin: top center;
 }
-.banner.show:nth-child(4){
+.blur-load.loaded.show:nth-child(4) > .banner{
   opacity: 1;
   animation: growDown 900ms ease-in-out forwards;
   transition-delay: 400ms;
@@ -58,26 +59,26 @@
   }
 }
 
-.banner.show:nth-child(1) .text-content{
+.blur-load.loaded.show:nth-child(1) .text-content{
 
   animation: fadeIn 1000ms ease-in-out forwards;
   transition-delay: 100ms;
   animation-delay: 100ms;
 }
-.banner.show:nth-child(2) .text-content{
+.blur-load.loaded.show:nth-child(2) .text-content{
 
   animation: fadeIn 1000ms ease-in-out forwards;
   transition-delay: 200ms;
   animation-delay: 200ms;
 
 }
-.banner.show:nth-child(3) .text-content{
+.blur-load.loaded.show:nth-child(3) .text-content{
 
   animation: fadeIn 1000ms ease-in-out forwards;
   transition-delay: 300ms;
   animation-delay: 300ms;
 }
-.banner.show:nth-child(4) .text-content{
+.blur-load.loaded.show:nth-child(4) .text-content{
 
   animation: fadeIn 1000ms ease-in-out forwards;
   transition-delay: 400ms;
@@ -118,12 +119,13 @@
 .banner-container{
   display: flex;
   flex-wrap: wrap;
+  overflow-x: hidden;
   justify-content: center;
   padding: 10vmax 0 10vmax ;
 }
 
 .banner-container h1 {
-  letter-spacing: 10px;
+  letter-spacing: 0.45vmax;
   font-size: xx-large;
   font-weight: bolder;
 }
@@ -133,24 +135,25 @@
 }
 .text-content {
   position: absolute;
-  translate: 9px 0px;
+  translate: 0.5vmax 0;
   z-index: 1;
 }
 
 .text-content h3, ul li {
-  padding: 0 0 50px 0;
+  padding: 0 0 1vmax 0;
 }
 
 .banner img {
   aspect-ratio: 1/3;
-  margin: 0 20px 0 20px;
+  margin: 0 0.7vmax 0 0.7vmax;
   min-width: fit-content;
-  filter: drop-shadow(0px 0px 20px black);
+  filter: drop-shadow(0 0 2vmax black);
 }
 
 .banner ul li {
   font-weight: bold;
   text-align: left;
+  /* max-width: 12vw; */
   width: 285px;
 }
 
@@ -181,12 +184,6 @@
   /* max-width: 10vw; */
 }
 @media only screen and (max-width: 1200px) {
-  .banner img {
-    /* aspect-ratio: 1/5;
-    width: 100px;
-    height: 100px; */
-  }
-
   @keyframes point-down {
     from {
         opacity: 0;
