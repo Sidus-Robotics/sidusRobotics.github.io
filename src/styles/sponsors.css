@@ -163,25 +163,30 @@
   align-items: center;
   background-color: lightgrey;
   min-width: fit-content;
-  padding:5vmax;
-  height: auto;
+  padding:5vmax 0 5vmax 0;
 }
 
 #sponsors-secondary-content a{
-  font-size: 0.7vmax;
+  font-size: 1vmax;
   translate: 10px -50px;
   color: black;
   text-decoration: none;
 }
 #sponsors-secondary-content div:nth-child(1) img{
-  width: 25vw;
-  /* max-width: 10vw; */
-  aspect-ratio: 2/1;
+  /* width: 25vw; */
+  max-width: 32vw;
+  aspect-ratio: 2/1.1;
 }
 #sponsors-secondary-content div:nth-child(2) img{
   aspect-ratio: 0;
-  width: 10vw;
-  /* max-width: 10vw; */
+  /* width: 10vw; */
+  max-width: 32vw;
+}
+
+.mail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media only screen and (max-width: 1200px) {
   @keyframes point-down {
