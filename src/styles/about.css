@@ -1,11 +1,11 @@
 @keyframes point-down {
     from {
         opacity: 0;
-        translate: 0px 46vw;
+        translate: 0px 47vw;
     }
     to {
         opacity: 1;
-        translate: 0px 47.25vw;
+        translate: 0px 48vw;
     }
 }
 

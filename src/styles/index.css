@@ -1,11 +1,23 @@
 .blur-load::before {
     max-width: max-content;
 }
+
+@keyframes point-down {
+    from {
+        opacity: 0;
+        translate: 0px 0vmax;
+    }
+    to {
+        translate: 0px 1vmax;
+    }
+}
+
 img#sidus-index {
-    aspect-ratio: 2/1.25;
+    aspect-ratio: 0;
     translate: 0 50px;
     opacity: 0;
     animation: pushUp ease 1000ms forwards;
+    width: 100%;
 }
 
 section.content-container#index-main-content div{
@@ -17,6 +29,7 @@ section#index-background img{
     display: block;
     justify-self: center;
     max-width: 55.5vmax;
+    /* max-width: 100%; */
     margin-top: 5.75vmax;
 }
 
@@ -105,9 +118,9 @@ img#pegnl {
 }
 
 @media only screen and (max-width: 1200px) {
-    img#sidus-index {
+    /* img#sidus-index {
         width: 39vmax;
-    }
+    } */
     section.content-container#index-secondary-content div.content{
         display: flex;
         flex-direction: column;

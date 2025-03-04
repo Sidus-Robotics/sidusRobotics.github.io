@@ -5,10 +5,10 @@
 @keyframes point-down {
     from {
         opacity: 0;
-        translate: 0px -3vmax;
+        translate: 0px -3vw;
     }
     to {
-        translate: 0px -1.75vmax;
+        translate: 0px -1.75vw;
     }
 }
 

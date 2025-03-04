@@ -88,10 +88,10 @@
 @keyframes point-down {
   from {
       opacity: 0;
-      translate: 0px 3vmax;
+      translate: 0px 3vw;
   }
   to {
-      translate: 0px 4vmax;
+      translate: 0px 4vw;
   }
 }
 
