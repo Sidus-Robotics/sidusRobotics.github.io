@@ -5,10 +5,10 @@
 @keyframes point-down {
     from {
         opacity: 0;
-        translate: 0px -3vmax;
+        translate: 0px -3vw;
     }
     to {
-        translate: 0px -1.75vmax;
+        translate: 0px -1.75vw;
     }
 }
 
@@ -20,7 +20,7 @@ div#arrow-animation {
     animation-iteration-count: infinite;
     animation-direction: alternate;
     position: relative;
-    z-index: 200;
+    z-index: 10;
 }
 
 @keyframes pushUp {
@@ -90,6 +90,7 @@ img {
     opacity: 0;
     transition: opacity 750ms ease-in-out;
 }
+
 body {
     color: white;
     font-family: "IBM Plex Mono";
