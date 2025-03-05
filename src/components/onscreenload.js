@@ -21,4 +21,4 @@ var x = setInterval(function() {
     for (const item of items) {
         observer.observe(item);
     }
-}, 50)
+}, 1000)
