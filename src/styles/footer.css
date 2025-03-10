@@ -28,7 +28,7 @@ p > img {
     max-width:max-content;
     pointer-events: all;
     padding: 0px 2px 0px 2px;
-    margin: auto;
+    margin: 0 10px 0 10px;
     width: 30px;
 }
 .social-medias {
