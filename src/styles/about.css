@@ -125,6 +125,7 @@ img#sidus-about {
 
 #about-secondary-content img {
     min-width: 250px;
+    width: 10vw;
     max-width: 100%;
     /* padding: 1vmax; */
     /* margin: 1vmax; */
