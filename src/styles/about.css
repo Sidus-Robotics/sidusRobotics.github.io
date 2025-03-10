@@ -126,9 +126,9 @@ img#sidus-about {
 #about-secondary-content img {
     min-width: 250px;
     /* max-width: 20vw; */
-    width: 100%;
+    padding: 1vmax;
+    margin: 1vmax;
     aspect-ratio: 0;
-    margin:5vw;
 }
 .container {
     flex-direction: column;
