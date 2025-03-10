@@ -122,7 +122,7 @@
   overflow-x: hidden;
   justify-content: center;
   padding: 10vmax 0 10vmax 0;
-  max-width: fit-content;
+  max-width: 100%;
   margin: auto;
 }
 
