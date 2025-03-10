@@ -19,16 +19,17 @@ footer p{
 p > img {
     /* position: absolute; */
     /* left: 10px; */
-    opacity: 0.5;
+    opacity: 1;
     aspect-ratio: 0;
     width: 20px;
     height: 20px;
     translate: 0 9px;
 }
-.social-medias img{
+.social-medias a > img{
     max-width:min-content;
     pointer-events: all;
     padding: 0px 2px 0px 2px;
+    margin: auto;
     width: 30px;
 }
 .social-medias {
