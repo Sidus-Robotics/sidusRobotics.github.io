@@ -122,7 +122,7 @@
   overflow-x: hidden;
   justify-content: center;
   padding: 10vmax 0 10vmax 0;
-  margin: 0vmax 8vmax 0vmax 8vmax;
+  margin: auto;
 }
 
 .banner-container h1 {
@@ -210,6 +210,7 @@
   } */
 }
 
+/* Hard fix for mobile devices */
 @media only screen and (max-width: 600px) {
   .mail a > h1 {
     font-size: small;
@@ -218,11 +219,9 @@
   .banner-container {
     display: flex;
     justify-content: center;
-    /* background-color: red; */
     flex-direction: column;
     position: relative;
     align-items: center;
     width: fit-content;
-    translate: -35px 0;
   }
 }
