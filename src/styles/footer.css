@@ -16,8 +16,6 @@ footer p{
 }
 
 p > img {
-    /* position: absolute; */
-    /* left: 10px; */
     opacity: 1;
     aspect-ratio: 0;
     width: 20px;
@@ -25,10 +23,12 @@ p > img {
     translate: 0 9px;
 }
 .social-medias a img{
+    display: flex;
+    justify-content: center;
     max-width:max-content;
     pointer-events: all;
     padding: 0px 2px 0px 2px;
-    margin: 0 10px 0 10px;
+    /* margin: 0 10px 0 10px; */
     width: 30px;
 }
 .social-medias {
