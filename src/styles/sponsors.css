@@ -153,8 +153,8 @@
 }
 
 .banner img {
-  /* display: inline-block; */
-  display: flex;
+  display: inline-block;
+  /* display: flex; */
   aspect-ratio: 0;
   padding: 0 10px 0 10px;
   /* min-width: fit-content; */
