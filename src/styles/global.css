@@ -20,7 +20,7 @@ div#arrow-animation {
     animation-iteration-count: infinite;
     animation-direction: alternate;
     position: relative;
-    z-index: 10;
+    z-index: 90;
 }
 
 @keyframes pushUp {
