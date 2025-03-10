@@ -178,7 +178,7 @@
 #sponsors-secondary-content  img{
   /* width: 25vw; */
   min-width: 50px;
-  max-width: 100%;
+  max-width: 5vw;
   aspect-ratio: 0;
 }
 
@@ -224,7 +224,7 @@
     /* position: relative; */
     align-items: center;
     width: 100%;
-    translate: -500px 0 ;
+    translate: -200px 0 ;
   }
   .banner-container img {
     width: 100%;
