@@ -175,10 +175,10 @@
 #sponsors-secondary-content a{
   text-decoration: none;
 }
-#sponsors-secondary-content div:nth-child(1) img{
+#sponsors-secondary-content  img{
   /* width: 25vw; */
-  min-width: 100px;
-  max-width: 5vw;
+  min-width: 50px;
+  max-width: 8vw;
   aspect-ratio: 0;
 }
 
@@ -213,7 +213,7 @@
 }
 
 /* Hard fix for mobile devices */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   .mail a > h1 {
     font-size: small;
     margin-left: 10%;
@@ -222,7 +222,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    position: relative;
+    /* position: relative; */
     align-items: center;
     /* width: fit-content; */
   }
