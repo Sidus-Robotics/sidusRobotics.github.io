@@ -1,5 +1,4 @@
 ---
-// import { Image } from 'astro:assets';
 import Navigation from "../components/navigation.astro";
 import TeamPic from "../Images/Team_Photos/2025/Team/TeamPic.png";
 import Footer from "../components/footer.astro";
@@ -19,7 +18,6 @@ import OMARI from "../Images/Team_Photos/2025/Headshots/omari.png";
 import SARTHAK from "../Images/Team_Photos/2025/Headshots/sarthak.png";
 import TIM from "../Images/Team_Photos/2025/Headshots/tim.png"
 import LinkedIn from "../Images/LinkedIn.svg";
-// import TEST from "../Images/Team_Photos/ash_wide.JPG"
 import "../styles/global.css";
 import "../styles/about.css";
 ---
@@ -258,20 +256,21 @@ import "../styles/about.css";
         </div>
 
         <div class="member-container">
+
           <div class="blur-load">
-            <img loading="lazy" src={BRETT.src} alt="" class="member" />
-            <h3>Brett Power</h3>
-            <h4>Lead</h4>
-            <a href="https://www.linkedin.com/in/brett-randy-power/"
+            <img loading="lazy" src={Placeholder.src} alt="" class="member" />
+            <h3>Jacob Duncan</h3>
+            <h4>Co-Lead</h4>
+            <a href="https://www.linkedin.com/in/jacobduncan876/"
               ><img loading="lazy" src={LinkedIn.src} alt="" /></a
             >
           </div>
 
           <div class="blur-load">
-            <img loading="lazy" src={Placeholder.src} alt="" class="member" />
-            <h3>Jacob Duncan</h3>
-            <h4>Power Systems</h4>
-            <a href="https://www.linkedin.com/in/jacobduncan876/"
+            <img loading="lazy" src={BRETT.src} alt="" class="member" />
+            <h3>Brett Power</h3>
+            <h4>Co-lead</h4>
+            <a href="https://www.linkedin.com/in/brett-randy-power/"
               ><img loading="lazy" src={LinkedIn.src} alt="" /></a
             >
           </div>
