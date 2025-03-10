@@ -124,6 +124,7 @@
   padding: 10vmax 0 10vmax 0;
   /* margin: auto; */
   align-items: center;
+  max-width: fit-content;
 }
 
 .banner-container h1 {
@@ -146,10 +147,12 @@
 }
 
 .banner img {
+  display: inline-block;
   aspect-ratio: 0;
   /* margin: 0 0.7vmax 0 0.7vmax; */
   padding: 0 10px 0 10px;
   min-width: fit-content;
+  max-width: max-content;
   filter: drop-shadow(0 0 2vmax black);
 }
 
@@ -228,6 +231,6 @@
     translate: -100px 0 ;
   }
   .banner-container img {
-    width: 100%;
+    max-width: 100%;
   }
 }
