@@ -122,9 +122,6 @@
   overflow-x: hidden;
   justify-content: center;
   padding: 10vmax 0 10vmax 0;
-  /* margin: auto; */
-  align-items: center;
-  max-width: fit-content;
 }
 
 .banner-container h1 {
@@ -146,11 +143,17 @@
   padding: 0 0 1vmax 0;
 }
 
+.banner {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-left: 10px;
+}
+
 .banner img {
   /* display: inline-block; */
   display: flex;
   aspect-ratio: 0;
-  /* margin: 0 0.7vmax 0 0.7vmax; */
   padding: 0 10px 0 10px;
   /* min-width: fit-content;
   max-width: max-content; */
