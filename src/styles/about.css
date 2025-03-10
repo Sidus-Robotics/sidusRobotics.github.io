@@ -127,6 +127,7 @@ img#sidus-about {
     min-width: 250px;
     max-width: 20vw;
     aspect-ratio: 0;
+    margin:auto;
 }
 .container {
     flex-direction: column;
