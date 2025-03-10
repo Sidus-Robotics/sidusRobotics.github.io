@@ -32,9 +32,11 @@ p > img {
     width: 30px;
 }
 .social-medias {
+    display: flex;
+    justify-content: center;
     position: absolute;
     right: 10px;
-    padding: 0px;
+    padding: 0px 2px 0px 2px;
     z-index: 1;
 }
 #facebook {
