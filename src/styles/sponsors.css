@@ -190,8 +190,7 @@
 
 .mail a > h1 {
   max-width: fit-content;
-  translate: 5px -50px;
-  margin-left: 10%;
+  translate: 20px -50px;
 }
 @media only screen and (max-width: 1200px) {
   @keyframes point-down {
@@ -216,7 +215,6 @@
 @media only screen and (max-width: 500px) {
   .mail a > h1 {
     font-size: small;
-    margin-left: 10%;
   }
   .banner-container {
     display: flex;
