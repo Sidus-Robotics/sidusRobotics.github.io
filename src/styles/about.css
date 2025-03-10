@@ -30,7 +30,6 @@
     background: linear-gradient(180deg, rgba(0,0,0,0.9) 10%, rgba(0,0,0,0) 100%);
     top: 0;
     position: absolute;
-    /* min-height: 275px; */
     height: 58vw;
     max-width: 100vw;
     width: 100vw;
@@ -127,8 +126,6 @@ img#sidus-about {
     min-width: 250px;
     width: 10vw;
     max-width: 100%;
-    /* padding: 1vmax; */
-    /* margin: 1vmax; */
     aspect-ratio: 0;
 }
 .container {
@@ -178,14 +175,6 @@ img.member {
         flex-wrap: wrap;
     }
     img.member {
-        /* width: 50vmax; */
         max-width: 18vmax;
     }
 }
-
-/* Hard fix for mobile  */
-/* @media only screen and (max-width: 500px) {
-    #about-secondary-content img {
-        translate: -80px 0;
-    }
-} */
