@@ -122,6 +122,8 @@
   overflow-x: hidden;
   justify-content: center;
   padding: 10vmax 0 10vmax 0;
+  max-width: fit-content;
+  margin: auto;
 }
 
 .banner-container h1 {
