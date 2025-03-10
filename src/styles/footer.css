@@ -23,8 +23,8 @@ p > img {
     translate: 0 9px;
 }
 .social-medias a img{
-    /* display: flex;
-    justify-content: center; */
+    display: flex;
+    justify-content: center;
     max-width:max-content;
     pointer-events: all;
     padding: 0px 2px 0px 2px;
