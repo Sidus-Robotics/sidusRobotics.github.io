@@ -146,7 +146,7 @@
 }
 
 .banner img {
-  aspect-ratio: 1/3;
+  aspect-ratio: 0;
   /* margin: 0 0.7vmax 0 0.7vmax; */
   padding: 0 10px 0 10px;
   min-width: fit-content;
