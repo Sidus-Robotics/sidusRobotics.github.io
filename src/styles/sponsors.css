@@ -178,7 +178,7 @@
 #sponsors-secondary-content  img{
   /* width: 25vw; */
   min-width: 50px;
-  max-width: 8vw;
+  max-width: 100%;
   aspect-ratio: 0;
 }
 
