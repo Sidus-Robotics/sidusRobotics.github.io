@@ -122,7 +122,7 @@
   overflow-x: hidden;
   justify-content: center;
   padding: 10vmax 0 10vmax 0;
-  margin: 0vmax auto 0vmax auto;
+  margin: 0vmax 8vmax 0vmax 8vmax;
 }
 
 .banner-container h1 {
@@ -207,4 +207,10 @@
     display: flex;
     flex-wrap: wrap;
   } */
+}
+
+@media only screen and (max-width: 1200px) {
+  .mail a > h1 {
+    font-size: small;
+  }
 }
