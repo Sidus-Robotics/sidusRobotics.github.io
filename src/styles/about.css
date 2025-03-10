@@ -93,15 +93,12 @@
 }
 
 img#sidus-about {
-    /* position: relative; */
     max-width: 100%;
-    /* width: 100%; */
     padding: 0;
-    /* z-index: -1; */
     aspect-ratio: 2/1;
 }
 
-section#about-main-content, section#about-secondary-content{
+#about-main-content, #about-secondary-content{
     padding-bottom: 100px;
 }
 #about-main-content{
@@ -109,7 +106,7 @@ section#about-main-content, section#about-secondary-content{
             rgba(17,27,40,1) 60%, rgba(37,47,63,1) 100%);
     padding-bottom: 2vmax;
 }
-section#about-background{
+#about-background{
     line-height: 0;
     display: block;
     justify-self: center;
@@ -127,8 +124,6 @@ section#about-background{
 }
 
 #about-secondary-content img {
-    display: block;
-    justify-self: center;
     min-width: 250px;
     max-width: 20vw;
     aspect-ratio: 0;

@@ -189,6 +189,7 @@
 .mail a > h1 {
   max-width: fit-content;
   translate: 5px -50px;
+  padding-left: 10px;
 }
 @media only screen and (max-width: 1200px) {
   @keyframes point-down {
@@ -209,8 +210,17 @@
   } */
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 600px) {
   .mail a > h1 {
     font-size: small;
+  }
+  .banner-container {
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+
   }
 }
