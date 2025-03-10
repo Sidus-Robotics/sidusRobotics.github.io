@@ -94,7 +94,11 @@ img {
     transition: opacity 750ms ease-in-out;
 }
 
+html {
+    height: -webkit-fill-available;
+}
 body {
+    height: -webkit-fill-available;
     color: white;
     font-family: "IBM Plex Mono";
     background-color: black;
