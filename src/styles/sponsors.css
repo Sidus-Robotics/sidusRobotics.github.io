@@ -214,15 +214,17 @@
 /* Hard fix for mobile devices */
 @media only screen and (max-width: 500px) {
   .mail a > h1 {
-    font-size: small;
+    font-size: medium;
   }
   .banner-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     flex-direction: column;
     /* position: relative; */
     align-items: center;
     /* width: fit-content; */
+    translate: -20px 0;
   }
   /* .banner-container img {
     width: max-content;
