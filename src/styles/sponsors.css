@@ -146,7 +146,8 @@
 
 .banner img {
   aspect-ratio: 1/3;
-  margin: 0 0.7vmax 0 0.7vmax;
+  /* margin: 0 0.7vmax 0 0.7vmax; */
+  padding: 0 10px 0 10px;
   min-width: fit-content;
   filter: drop-shadow(0 0 2vmax black);
 }
@@ -176,7 +177,7 @@
 #sponsors-secondary-content div:nth-child(1) img{
   /* width: 25vw; */
   min-width: 100px;
-  max-width: 10vw;
+  max-width: 5vw;
   aspect-ratio: 0;
 }
 
@@ -222,6 +223,9 @@
     flex-direction: column;
     position: relative;
     align-items: center;
-    width: fit-content;
+    /* width: fit-content; */
   }
+  /* .banner-container img {
+    width: max-content;
+  } */
 }
