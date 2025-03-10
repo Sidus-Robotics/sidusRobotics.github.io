@@ -119,10 +119,10 @@
 .banner-container{
   display: flex;
   flex-wrap: wrap;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   justify-content: center;
   padding: 10vmax 0 10vmax 0;
-  margin: 0vmax 10vmax 0vmax 10vmax;
+  margin: 0vmax auto 0vmax auto;
 }
 
 .banner-container h1 {
