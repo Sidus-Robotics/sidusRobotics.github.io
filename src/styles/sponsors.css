@@ -121,7 +121,8 @@
   flex-wrap: wrap;
   overflow-x: hidden;
   justify-content: center;
-  padding: 10vmax 0 10vmax ;
+  padding: 10vmax 0 10vmax 0;
+  margin: 0vmax 10vmax 0vmax 10vmax;
 }
 
 .banner-container h1 {

@@ -62,14 +62,16 @@ input {
     pointer-events: none;
     position: absolute;
     top: 5px;
-    right: 15px;
-    height: 3vmax;
-    width: 3vmax;
+    right: -20px;
+    height: 70%;
+    width: 70%;
+    max-width: 100px;
+    max-height: 100px;
     z-index: 2;
-    padding: 10vmax;
     background:red;
+    /* visibility: visible; */
     /* margin: 1vmax 21px; */
-    opacity: 0;
+    opacity: 1;
 }
 
 input:checked ~ nav {
