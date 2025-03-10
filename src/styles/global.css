@@ -64,6 +64,9 @@ img {
     object-fit: cover;
 }
 
+#arrow-animation img {
+    width: fit-content;
+}
 .blur-load::before {
     content: '';
     position: absolute;
@@ -99,20 +102,32 @@ body {
     overflow-x:hidden;
     margin: 0;
 }
-
+/* 
+img {
+    display: flex;
+    justify-content: center;
+} */
+.container {
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+}
 h3 {
     display: flex;
     justify-content: center;
 }
 
-section.content-container h1 {
-    display: flex;
+.content-container h1 {
+    display: black;
     justify-content: center;
     padding-top: 100px;
 }
 
 @media only screen and (max-width: 1200px) {
-    div#arrow-animation img{
-        width: 3vmax;
-    }
+    /* #arrow-animation img{
+        width: 3vw;
+    } */
 }
