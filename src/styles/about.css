@@ -181,3 +181,10 @@ img.member {
         max-width: 18vmax;
     }
 }
+
+/* Hard fix for mobile  */
+@media only screen and (max-width: 500px) {
+    #about-secondary-content img {
+        translate: -40px 0;
+    }
+}
