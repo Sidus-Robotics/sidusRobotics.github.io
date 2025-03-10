@@ -223,7 +223,7 @@
     flex-direction: column;
     /* position: relative; */
     align-items: center;
-    width: max-content;
+    width: 100%;
   }
   /* .banner-container img {
     width: max-content;
