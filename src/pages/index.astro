@@ -40,22 +40,30 @@ import "../styles/index.css";
     <Navigation />
 
     <section class="content-container" id="index-background">
-      <div class="blur-load">
-        <img
-          loading="lazy"
-          src={FullLogo.src}
-          alt="siduslogo.png"
-          id="sidus-index"
-        />
+
+    
+      <div class="container">
+        <div class="blur-load">
+          <img
+            loading="lazy"
+            src={FullLogo.src}
+            alt="siduslogo.png"
+            id="sidus-index"
+          />
+        </div>
       </div>
 
       <h1 id="countdown">
         COMPETITION: -- WEEKS -- DAYS -- HOURS -- MINUTES -- SECONDS
       </h1>
 
-      <div id="arrow-animation">
-        <img src={Arrow.src} alt="" />
+      <div class="container">
+        <div id="arrow-animation">
+          <img src={Arrow.src} alt="" />
+        </div>
+
       </div>
+      
     </section>
 
     <section class="content-container" id="index-main-content">
@@ -76,7 +84,9 @@ import "../styles/index.css";
     </section>
 
     <section class="content-container" id="index-secondary-content">
-      <h1>SUBTEAMS</h1>
+      <div class="container">
+        <h1>SUBTEAMS</h1>
+      </div>
 
       <div class="content" id="sub-teams">
         <div class="info-blocks" id="mechanical-block">
@@ -145,14 +155,19 @@ import "../styles/index.css";
       </div>
     </section>
     <section class="content-container" id="index-tertiary-content">
-      <h1>SPONSORS</h1>
-      <h1 class="" id="bronze-medal">BRONZE</h1>
+
+      <div class="container">
+        <h1>SPONSORS</h1>
+        <h1 class="" id="bronze-medal">BRONZE</h1>
+      </div>
+      
       <div class="image-block">
         <div class="blur-load">
           <img loading="lazy" src={Colab.src} alt="colab.png" id="colab" />
           <img loading="lazy" src={Pegnl.src} alt="pegnl.svg" id="pegnl" />
         </div>
       </div>
+
     </section>
     <Footer />
   </body>
