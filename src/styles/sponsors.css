@@ -235,9 +235,10 @@
     /* position: relative; */
     align-items: center;
     /* width: 100%; */
-    translate: 50px 0 ;
+    /* translate: 50px 0 ; */
   }
   .banner-container img {
+    /* width: 100%; */
     max-width: 100%;
     /* displ */
   }
