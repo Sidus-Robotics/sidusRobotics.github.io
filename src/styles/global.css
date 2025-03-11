@@ -57,7 +57,6 @@
 img {
     max-width: 12.5vmax;
     min-width: 0.1vmax;
-    
     width: 100%;
     aspect-ratio: 1/1;
     object-position: center;
@@ -78,12 +77,12 @@ img {
 }
 .blur-load.loaded::before {
     content: none;
+    animation: none;
 }
 .blur-load {
     position: relative;
     background-size: cover;
     background-position: center;
-    
 }
 .blur-load.loaded > img{
     opacity: 1;

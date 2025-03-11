@@ -1,4 +1,4 @@
-.blur-load::before{
+header .blur-load::before{
     animation: none;
 }
 header {
@@ -8,7 +8,7 @@ header {
     min-height: 10px;
     top: 0;
     background-color: black;
-    z-index: 100;
+    z-index: 1000;
 }
 
 header img{
@@ -31,7 +31,6 @@ header a{
     text-decoration: none;
     font-weight: bold;
     font-size: 1.5vmax;
-    /* margin-right: 10px;   */
 }
 
 .link{
@@ -67,8 +66,7 @@ input{
     width: 70%;
     max-width: 100px;
     max-height: 100px;
-    z-index: 2;
-    background:red;
+    z-index: 2000;
     opacity: 0;
 }
 
