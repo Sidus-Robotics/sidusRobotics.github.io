@@ -12,7 +12,7 @@
     }
 }
 
-div#arrow-animation {
+#arrow-animation {
     display: block;
     justify-self: center;
     animation-name: point-down;
