@@ -1,4 +1,4 @@
-.blur-load::before{
+header .blur-load::before{
     animation: none;
 }
 header {
@@ -31,7 +31,6 @@ header a{
     text-decoration: none;
     font-weight: bold;
     font-size: 1.5vmax;
-    /* margin-right: 10px;   */
 }
 
 .link{
