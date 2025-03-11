@@ -8,7 +8,7 @@ header {
     min-height: 10px;
     top: 0;
     background-color: black;
-    z-index: 100;
+    z-index: 1000;
 }
 
 header img{
