@@ -8,7 +8,6 @@ footer div{
     z-index: 100;
 }
 footer p{
-    content: '2025 Sidus Robotics. All Rights Reserved';
     position: absolute;
     font-size: small;
     opacity: 0.5;
@@ -17,24 +16,26 @@ footer p{
 }
 
 p > img {
-    /* position: absolute; */
-    /* left: 10px; */
-    opacity: 0.5;
+    opacity: 1;
     aspect-ratio: 0;
     width: 20px;
     height: 20px;
     translate: 0 9px;
 }
-.social-medias img{
-    max-width:min-content;
+.social-medias a img{
+    display: flex;
+    justify-content: center;
+    max-width:max-content;
     pointer-events: all;
     padding: 0px 2px 0px 2px;
     width: 30px;
 }
 .social-medias {
+    display: flex;
+    justify-content: center;
     position: absolute;
     right: 10px;
-    padding: 0px;
+    padding: 0px 2px 0px 2px;
     z-index: 1;
 }
 #facebook {

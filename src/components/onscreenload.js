@@ -1,10 +1,3 @@
-
-
-// const things = document.querySelectorAll('.banner');
-// for (const thing of things) {
-//     observer.observe(thing);
-// }
-
 var x = setInterval(function() {
     const intersectionCallback = (entries) => {
         for (const entry of entries) { 
