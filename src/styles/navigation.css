@@ -67,8 +67,7 @@ input{
     width: 70%;
     max-width: 100px;
     max-height: 100px;
-    z-index: 2;
-    background:red;
+    z-index: 2000;
     opacity: 0;
 }
 
